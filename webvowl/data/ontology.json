@@ -1,0 +1,3071 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "fr", "undefined" ],
+    "baseIris" : [ "http://www.ontologyportal.org/SUMO.owl", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://rdf.insee.fr/def/geo/insee-geo-onto.ttl", "https://www.nobatek.inef4.com/dataview/onto", "http://www.w3.org/2001/XMLSchema", "https://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL/", "http://rdf.insee.fr/def/demo/insee-demo-onto.ttl", "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl", "http://descartes-core.org/ontologies/lca/1.0/LCAPattern.owl", "http://cui.unige.ch/isi/onto/citygml2.0.owl" ],
+    "title" : {
+      "en" : "DataView Ontology"
+    },
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "version" : "0.1.2",
+    "author" : [ "Nathalie Charbel" ],
+    "description" : {
+      "en" : "DataView Ontology defines core concepts and relations for urban data used by Nobatek/INEF4 tools for environmental and energy assessments such as lifecyle assessments of sustainable territories and decision support evaluations for the design of optimal urban heating networks. It encapsulates common vocabularies among these tools as well as vocabularies from open and public urban data sources."
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Nathalie Charbel",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "fr",
+        "value" : "Laboratoire d'Informatique de Bourgogne (LIB)",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Ana Roxin",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Christophe Nicolle",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "fr",
+        "value" : "Laboratoire Connaissance et Intelligence Artificielle Distribuées (CIAD)",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "fr",
+        "value" : "SAYENS, SATT, catalyseur d'innovations",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "fr",
+        "value" : "Nobatek/INEF4, Institut pour la Transition Energétique (ITE)",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2020-01-15",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "dvo",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1.2",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "DataView Ontology",
+        "type" : "label"
+      } ],
+      "value" : [ {
+        "identifier" : "value",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "14",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "18",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "19",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "20",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "21",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "23",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "24",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "26",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "41",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "42",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "43",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "40",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "46",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "52",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "53",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "54",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "60",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "63",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "65",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "67",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "64",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "16",
+    "type" : "owl:disjointUnionOf"
+  }, {
+    "id" : "7",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "70",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "62",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "79",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "66",
+    "type" : "owl:disjointUnionOf"
+  }, {
+    "id" : "89",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "97",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "101",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "29",
+    "type" : "owl:disjointUnionOf"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "100",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "49",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "132",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "133",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "3",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "137",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "144",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "27",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "71",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "6",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "107",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "151",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "76",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "155",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "159",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "13",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "85",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "119",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "73",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "178",
+    "type" : "owl:Class"
+  }, {
+    "id" : "104",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "69",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.ontologyportal.org/SUMO.owl#Building",
+    "baseIri" : "http://www.ontologyportal.org/SUMO.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Building"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#EducationScore",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EducationScore",
+      "en" : "Education score",
+      "fr" : "Score écoles"
+    },
+    "comment" : {
+      "fr" : "Il rentre dans l'évaluation de la mixité fonctionnelle d'une zone donnée. Ce score correspond au pourcentage de logements de l'aménagement situés à moins de 400 des écoles."
+    },
+    "id" : "1"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#HigherEducation",
+    "equivalent" : [ "7" ],
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HigherEducation",
+      "fr" : "Enseignement supérieur"
+    },
+    "individuals" : [ {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#UNIVERSITY",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "UNIVERSITY",
+        "en" : "University",
+        "fr" : "Universtité"
+      }
+    } ],
+    "comment" : {
+      "en" : "Higher education"
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "5",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Land_Use_By_Economic_Function",
+    "baseIri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Land_Use_By_Economic_Function"
+    },
+    "attributes" : [ "external" ],
+    "id" : "10",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#LandUseConstraints",
+    "equivalent" : [ "13" ],
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LandUseConstraints",
+      "en" : "Land use constraints",
+      "fr" : "Les contraintes particulières liées au terrain."
+    },
+    "individuals" : [ {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#EARTHQUAKE",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "EARTHQUAKE"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#FLOODING",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "FLOODING",
+        "en" : "Flooding",
+        "fr" : "Inondation"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#NOT_APPLICABLE",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "NOT_APPLICABLE",
+        "en" : "Not applicable",
+        "fr" : "Non applicable"
+      }
+    } ],
+    "comment" : {
+      "en" : "Land use constraints are restrictions that limit or preclude the development of a property.",
+      "fr" : "Les contraintes du terrain sont des restrictions qui limitent ou empêchent le développement d'une propriété."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Not-Renewable_Energy_Source",
+    "baseIri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Not-Renewable_Energy_Source"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#LowMixedUseDegree",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LowMixedUseDegree",
+      "en" : "Low functional diversity degree",
+      "fr" : "Degré de mixité fonctionnelle faible"
+    },
+    "id" : "15",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Primary_Education",
+    "baseIri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Primary_Education"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://cui.unige.ch/isi/onto/citygml2.0.owl#Address",
+    "baseIri" : "http://cui.unige.ch/isi/onto/citygml2.0.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Address"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Energy_Source",
+    "baseIri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Energy_Source"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Carbon_Monoxide",
+    "baseIri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Carbon_Monoxide"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#EnergyPerformance",
+    "equivalent" : [ "22" ],
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EnergyPerformance",
+      "en" : "Energy performance",
+      "fr" : "Performance énergétique"
+    },
+    "individuals" : [ {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#RT2012-10",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "comment" : {
+        "en" : "The “RT 2012 -10%” is a label set up to reward buildings whose energy performance reaches a level higher than the one set by the current standard, which is the thermal regulation 2012. The label is awarded to residential or commercial buildings whose energy consumption is at least 10% below the legal thresholds.",
+        "fr" : "La « RT 2012 -10 % » est un label mis en place pour récompenser les bâtiments dont la performance énergétique atteint un niveau supérieur à celui fixé par la norme actuelle qu'est la réglementation thermique 2012. Comme son nom l'indique, le label est décerné aux bâtiments résidentiels ou commerciaux qui affichent une consommation d'énergie inférieure d'au moins 10% aux seuils légaux."
+      },
+      "labels" : {
+        "IRI-based" : "RT2012-10",
+        "en" : "Thermal regulation 2012 - 10%",
+        "fr" : "RT 2012 - 10%"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#RT2012-20",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "comment" : {
+        "en" : "The “RT 2012 -20%” is a label set up to reward buildings whose energy performance reaches a level higher than the one set by the current standard, which is the thermal regulation 2012. The label is awarded to residential or commercial buildings whose energy consumption is at least 20% below the legal thresholds.",
+        "fr" : "La « RT 2012 -20 % » est un label mis en place pour récompenser les bâtiments dont la performance énergétique atteint un niveau supérieur à celui fixé par la norme actuelle qu'est la réglementation thermique 2012. Comme son nom l'indique, le label est décerné aux bâtiments résidentiels ou commerciaux qui affichent une consommation d'énergie inférieure d'au moins 20% aux seuils légaux."
+      },
+      "labels" : {
+        "IRI-based" : "RT2012-20",
+        "en" : "Thermal regulation 2012 - 20%",
+        "fr" : "RT 2012 - 20%"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#RT2012-40",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "comment" : {
+        "en" : "The “RT 2012 -40%” is a label set up to reward buildings whose energy performance reaches a level higher than the one set by the current standard, which is the thermal regulation 2012. The label is awarded to residential or commercial buildings whose energy consumption is at least 40% below the legal thresholds.",
+        "fr" : "La « RT 2012 -40 % » est un label mis en place pour récompenser les bâtiments dont la performance énergétique atteint un niveau supérieur à celui fixé par la norme actuelle qu'est la réglementation thermique 2012. Comme son nom l'indique, le label est décerné aux bâtiments résidentiels ou commerciaux qui affichent une consommation d'énergie inférieure d'au moins 40% aux seuils légaux."
+      },
+      "labels" : {
+        "IRI-based" : "RT2012-40",
+        "en" : "Thermal regulation 2012 - 40%",
+        "fr" : "Réglementation thermique 2012 - 40%"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#RT2012",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "comment" : {
+        "en" : "The 2012 thermal regulations (known as “RT 2012”) set ambitious targets for efficient energy with a maximum energy consumption of 50 kWhpe / (m².year) on average. It applies to all construction projects in France.",
+        "fr" : "La réglementation thermique 2012 (dite « RT 2012 ») pose des objectifs ambitieux en matière d’efficacité énergétique avec un maximum d’énergie consommée fixé à 50 kWhep/(m².an) en moyenne. Elle s'applique à tous les projets de constructions en France."
+      },
+      "labels" : {
+        "IRI-based" : "RT2012",
+        "en" : "Thermal regulation 2012",
+        "fr" : "Réglementation thermique 2012"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#RT2012-5",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "comment" : {
+        "en" : "The “RT 2012 -5%” is a label set up to reward buildings whose energy performance reaches a level higher than the one set by the current standard, which is the thermal regulation 2012. The label is awarded to residential or commercial buildings whose energy consumption is at least 5% below the legal thresholds.",
+        "fr" : "La « RT 2012 -5 % » est un label mis en place pour récompenser les bâtiments dont la performance énergétique atteint un niveau supérieur à celui fixé par la norme actuelle qu'est la réglementation thermique 2012. Comme son nom l'indique, le label est décerné aux bâtiments résidentiels ou commerciaux qui affichent une consommation d'énergie inférieure d'au moins 5% aux seuils légaux."
+      },
+      "labels" : {
+        "IRI-based" : "RT2012-5",
+        "en" : "Thermal regulation 2012 - 5%",
+        "fr" : "Réglementation thermique 2012 - 5%"
+      }
+    } ],
+    "comment" : {
+      "en" : "An energy performance is a measure of the relative energy efficiency of a building, building equipment, or building components, as measured by the amount of energy required to provide building services.",
+      "fr" : "Une performance énergétique est une mesure de l'efficacité énergétique relative d'un bâtiment, de l'équipement du bâtiment ou des composants du bâtiment, mesurée par la quantité d'énergie nécessaire pour fournir des services de construction."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Commercial_Building_And_Other_Specialised_Structures",
+    "baseIri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Commercial_Building_And_Other_Specialised_Structures"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#Commercial",
+    "equivalent" : [ "23" ],
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Commercial",
+      "en" : "Commercial",
+      "fr" : "Commercial"
+    },
+    "individuals" : [ {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#PERFUMERY",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "PERFUMERY",
+        "en" : "Perfumery",
+        "fr" : "Parfumerie"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#FLORIST",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "FLORIST",
+        "en" : "Florist",
+        "fr" : "Fleuriste"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#GROCERY",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "GROCERY",
+        "en" : "Grocery",
+        "fr" : "Epicerie"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#SUPERMARKET",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "SUPERMARKET",
+        "en" : "Supermarket",
+        "fr" : "Supermarché"
+      }
+    } ],
+    "attributes" : [ "equivalent" ],
+    "id" : "24",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#Service",
+    "equivalent" : [ "27" ],
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Service",
+      "en" : "Service",
+      "fr" : "Service"
+    },
+    "comment" : {
+      "en" : "A service offered to the population in a territory.",
+      "fr" : "Un service rendu à la population sur un territoire."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#HighCarbonFootprint",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HighCarbonFootprint",
+      "en" : "High carbon footprint",
+      "fr" : "Empreinte carbone élevée"
+    },
+    "id" : "28",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://rdf.insee.fr/def/geo/insee-geo-onto.ttl#Pays",
+    "baseIri" : "http://rdf.insee.fr/def/geo/insee-geo-onto.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Pays"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#MediumMixedUseDegree",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MediumMixedUseDegree",
+      "en" : "Medium functional diversity degree",
+      "fr" : "Degré de mixité fonctionnel moyen"
+    },
+    "id" : "31",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#UrbanPlanning",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UrbanPlanning",
+      "en" : "Urban planning",
+      "fr" : "Opération d'aménagement urbain"
+    },
+    "subClasses" : [ "34", "35" ],
+    "comment" : {
+      "en" : "An urban planning activity comes down to the implementation of an urban project. It either consists of the creation of waterproofsurfaces or the modification of existing surfaces.",
+      "fr" : "Une opération d'aménagement urbain est une mise en œuvre d'un projet urbain. Celui-ci peut consister en la création de surfaces imperméabilisées ou en la modification de surfaces existantes."
+    },
+    "id" : "32",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#NumberOfInhabitants",
+    "equivalent" : [ "39", "40" ],
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NumberOfInhabitants",
+      "en" : "Number of inhabitants",
+      "fr" : "Nombre d'habitants"
+    },
+    "comment" : {
+      "en" : "Determines the number of inhabitants in a given urban zone.",
+      "fr" : "Correspond au nombre d'habitants dans une zone urbaine."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#PrimarySchool",
+    "equivalent" : [ "17" ],
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PrimarySchool"
+    },
+    "individuals" : [ {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#PRESCHOOL",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "PRESCHOOL",
+        "en" : "Preschool",
+        "fr" : "Ecole maternelle"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#ELEMENTARY_SCHOOL",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "ELEMENTARY_SCHOOL",
+        "en" : "Elementary school",
+        "fr" : "Ecole élémentaire"
+      }
+    } ],
+    "attributes" : [ "equivalent" ],
+    "id" : "41",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Educational",
+    "baseIri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Educational"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://cui.unige.ch/isi/onto/citygml2.0.owl#LandUse",
+    "baseIri" : "http://cui.unige.ch/isi/onto/citygml2.0.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LandUse"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Population_Size",
+    "baseIri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Population_Size"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "40"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#HealthScore",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HealthScore",
+      "en" : "Health score",
+      "fr" : "Score médecins"
+    },
+    "comment" : {
+      "fr" : "Il rentre dans l'évaluation de la mixité fonctionnelle d'une zone donnée. Ce score correspond au nombre de médecins pour 1000 habitants."
+    },
+    "id" : "44"
+  }, {
+    "iri" : "https://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL/#IfcConstructionMaterialResourceType",
+    "baseIri" : "https://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IfcConstructionMaterialResourceType"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://rdf.insee.fr/def/geo/insee-geo-onto.ttl#Departement",
+    "baseIri" : "http://rdf.insee.fr/def/geo/insee-geo-onto.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Departement"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#SecondarySchool",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SecondarySchool"
+    },
+    "individuals" : [ {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#HIGH_SCHOOL",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "HIGH_SCHOOL",
+        "en" : "High school",
+        "fr" : "Lycée"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#MIDDLE_SCHOOL",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "MIDDLE_SCHOOL",
+        "en" : "Middle school",
+        "fr" : "Collège"
+      }
+    } ],
+    "id" : "47",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#BuildingTypology",
+    "equivalent" : [ "49" ],
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BuildingTypology",
+      "en" : "Building typology",
+      "fr" : "Typologie de bâtiment"
+    },
+    "individuals" : [ {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#SINGLE_FAMILY_HOUSE",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "SINGLE_FAMILY_HOUSE",
+        "en" : "Single family house",
+        "fr" : "Maison individuelle"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#COLLECTIVE_BUILDINGS",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "COLLECTIVE_BUILDINGS",
+        "en" : "Collective buildings",
+        "fr" : "Bâtiments collectifs"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#ACTIVITIES_SERVICES",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "ACTIVITIES_SERVICES",
+        "en" : "Activities and services",
+        "fr" : "Activités et services"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#OFFICES",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "OFFICES",
+        "en" : "Offices",
+        "fr" : "Bureaux"
+      }
+    } ],
+    "comment" : {
+      "en" : "Defines a set of buildings which have similarities in their type, function or form.",
+      "fr" : "Définit un ensemble de bâtiments qui ont des similarités au niveau de leur type, leur fonction ou leur forme."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Land_Use_By_Site_Development",
+    "baseIri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Land_Use_By_Site_Development"
+    },
+    "attributes" : [ "external" ],
+    "id" : "50",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#SurfaceAttribute",
+    "baseIri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SurfaceAttribute"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Building_Use",
+    "baseIri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Building_Use"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Intermediate_Floor_Type",
+    "baseIri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Intermediate_Floor_Type"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Address",
+    "baseIri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Address"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "54"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#EnergyCarrier",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EnergyCarrier",
+      "en" : "Energy carrier",
+      "fr" : "Transporteur d'énergie"
+    },
+    "individuals" : [ {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#DISTRICT_HEATING",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "DISTRICT_HEATING",
+        "en" : "District heating",
+        "fr" : "Réseaux de chaleur"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#ELECTRICITY",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "ELECTRICITY",
+        "en" : "Electricity",
+        "fr" : "Eléctricité"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#NATURAL_GAS",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "NATURAL_GAS",
+        "en" : "Natural gas",
+        "fr" : "Gaz naturel"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#COAL",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "COAL",
+        "en" : "Coal",
+        "fr" : "Charbon"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#WOOD",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "WOOD",
+        "en" : "Wood",
+        "fr" : "Bois"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#FUEL",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "FUEL",
+        "en" : "Fuel",
+        "fr" : "Fioul"
+      }
+    } ],
+    "comment" : {
+      "en" : "An energy carrier is the substance/system that contains energy that can be later converted to other forms. Such carriers are coal, electricity, fuel, natural gas, wood, district heating.",
+      "fr" : "Un transporteur d'énergie est la substance / le système qui contient de l'énergie et qui peut ensuite être convertie en d'autres formes. Des exemples de transporteurs d'énergie sont le charbon, l'électricité, le carburant, le gaz naturel, le bois et les réseaux de chaleur."
+    },
+    "id" : "55"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#HighMixedUseDegree",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HighMixedUseDegree",
+      "en" : "High functional diversity degree",
+      "fr" : "Degré de mixité fonctionnelle élevé"
+    },
+    "id" : "56",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#BuildingUse",
+    "equivalent" : [ "52" ],
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BuildingUse",
+      "en" : "Building use",
+      "fr" : "Usage de bâtiment"
+    },
+    "subClasses" : [ "57", "24", "58", "59", "60", "61", "6" ],
+    "comment" : {
+      "en" : "A building use corresponds to the element related to what it is used for.",
+      "fr" : "Un usage de bâtiment correspond à un élément relatif à ce quoi il est utilisé."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "25",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#SportsAndLeisure",
+    "equivalent" : [ "62" ],
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SportsAndLeisure",
+      "en" : "Sports and leisure",
+      "fr" : "Sports et loisirs"
+    },
+    "individuals" : [ {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#TENNIS",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "TENNIS",
+        "en" : "Tennis",
+        "fr" : "Tennis"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#GYM",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "GYM",
+        "en" : "Gym",
+        "fr" : "Salle de sport"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#HORSE_RIDING_CENTER",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "HORSE_RIDING_CENTER",
+        "en" : "Horseriding center",
+        "fr" : "Centre équestre"
+      }
+    } ],
+    "comment" : {
+      "en" : "Describes a building use intended for sports and leisure.",
+      "fr" : "Correspond à un usage de bâtiment destiné aux activités sportives et loisirs."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "60",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#Department",
+    "equivalent" : [ "46" ],
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Department",
+      "en" : "Department",
+      "fr" : "Département"
+    },
+    "comment" : {
+      "en" : "Country, region, department, city, and district are different granularity levels of address. Possible \"hasPart\" relationships are possible among them.\n\nInstances of these concepts can be provided by an open data source, such as INSEE, Open Data, etc. Thus, for each concept, it is possible to add an equivalent set enumerating all provided instances."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "63",
+    "superClasses" : [ "64" ]
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#NonRenewableEnergySource",
+    "equivalent" : [ "14" ],
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NonRenewableEnergySource",
+      "en" : "Non renewable energy source",
+      "fr" : "Source d'énergie non renouvelable"
+    },
+    "individuals" : [ {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#NUCLEAR",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "NUCLEAR",
+        "en" : "Nuclear",
+        "fr" : "Nucléaire"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#NATURAL_GAS",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "NATURAL_GAS",
+        "en" : "Natural gas",
+        "fr" : "Gaz naturel"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#COAL",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "COAL",
+        "en" : "Coal",
+        "fr" : "Charbon"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#CRUDE_OIL",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "CRUDE_OIL",
+        "en" : "Crude oil",
+        "fr" : "Pétrole brut"
+      }
+    } ],
+    "comment" : {
+      "en" : "A non renewable energy source is a resource of economic value that cannot be readily replaced by natural means at a quick enough pace to keep up with consumption.",
+      "fr" : "Une source d'énergie non renouvelable est une ressource de valeur économique qui ne peut pas être facilement remplacée par des moyens naturels à un rythme suffisamment rapide pour suivre la consommation."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "65",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#District",
+    "equivalent" : [ "68" ],
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "District",
+      "en" : "District",
+      "fr" : "IRIS"
+    },
+    "comment" : {
+      "en" : "Country, region, department, city, and district are different granularity levels of address. Possible \"hasPart\" relationships are possible among them.\n\nInstances of these concepts can be provided by an open data source, such as INSEE, Open Data, etc. Thus, for each concept, it is possible to add an equivalent set enumerating all provided instances."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "67",
+    "superClasses" : [ "64" ]
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#Address",
+    "equivalent" : [ "72", "54", "18" ],
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Address",
+      "en" : "Address",
+      "fr" : "Adresse"
+    },
+    "subClasses" : [ "69", "70", "63", "67", "71" ],
+    "comment" : {
+      "en" : "The address of an urban object or urban zone.\nIt refers to its name, code and gps coordinates.\nIt can be encapsulated by other addresses as well.",
+      "fr" : "L'adresse d'un objet urbain ou d'une zone urbaine. \nElle est caractérisée par son nom, son code et ses coordonnées gps.\nElle peut faire partie d'autres addresses."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "64"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#MixedUseDegree",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "disjointUnion" : [ "31", "15", "56" ],
+    "label" : {
+      "IRI-based" : "MixedUseDegree",
+      "en" : "Mixed use degree",
+      "fr" : "Degré de mixité fonctionnelle"
+    },
+    "subClasses" : [ "31", "15", "56" ],
+    "comment" : {
+      "fr" : "A mixed use degree is a numeric value that determines if the mixed use is tight, medium or coarse."
+    },
+    "attributes" : [ "disjointUnion" ],
+    "id" : "16",
+    "superClasses" : [ "73" ]
+  }, {
+    "iri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Higher_Education",
+    "baseIri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Higher_Education"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#Region",
+    "equivalent" : [ "76" ],
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Region",
+      "en" : "Region",
+      "fr" : "Région"
+    },
+    "comment" : {
+      "en" : "Country, region, department, city, and district are different granularity levels of address. Possible \"hasPart\" relationships are possible among them.\n\nInstances of these concepts can be provided by an open data source, such as INSEE, Open Data, etc. Thus, for each concept, it is possible to add an equivalent set enumerating all provided instances."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "70",
+    "superClasses" : [ "64" ]
+  }, {
+    "iri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Sports_Facilities",
+    "baseIri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sports_Facilities"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://descartes-core.org/ontologies/lca/1.0/LCAPattern.owl#Activity",
+    "baseIri" : "http://descartes-core.org/ontologies/lca/1.0/LCAPattern.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Activity"
+    },
+    "subClasses" : [ "32" ],
+    "attributes" : [ "external" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Land_Use_By_Type_Of_Structure",
+    "baseIri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Land_Use_By_Type_Of_Structure"
+    },
+    "attributes" : [ "external" ],
+    "id" : "77",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "78",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#ConstructionType",
+    "equivalent" : [ "53", "45", "80" ],
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConstructionType",
+      "en" : "Construction type",
+      "fr" : "Système constructif"
+    },
+    "individuals" : [ {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#WOOD_FRAME",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "WOOD_FRAME",
+        "en" : "Wood frame",
+        "fr" : "Ossature bois"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#AERATED_CONCRETE",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "AERATED_CONCRETE",
+        "en" : "Aerated concrete",
+        "fr" : "Béton cellulaire"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#CONCRETE_BLOCKS",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "CONCRETE_BLOCKS",
+        "en" : "Concrete blocks",
+        "fr" : "Blocs de béton"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#CLAY_BRICK",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "CLAY_BRICK",
+        "en" : "Clay brick",
+        "fr" : "Brique en terre cuite"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#STEEL_CONCRETE",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "STEEL_CONCRETE",
+        "en" : "Steel / Concrete",
+        "fr" : "Acier / Béton"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#CONCRETE_WOOD",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "CONCRETE_WOOD",
+        "en" : "Concrete / Wood",
+        "fr" : "Béton / Bois"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#REINFORCED_CONCRETE",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "REINFORCED_CONCRETE",
+        "en" : "Reinforced concrete",
+        "fr" : "Béton armé"
+      }
+    } ],
+    "comment" : {
+      "en" : "Defines the type of materials used in the construction of the building.",
+      "fr" : "Définit le type des matériaux utilisés dans la construction du bâtiment."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "79"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#ZoneCategory",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ZoneCategory",
+      "en" : "Zone category",
+      "fr" : "Catégorie de la zone"
+    },
+    "individuals" : [ {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#RURAL_AREA",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "RURAL_AREA",
+        "en" : "Rural area",
+        "fr" : "Espace rural"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#SUBURBAN_PERIPHERY",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "SUBURBAN_PERIPHERY",
+        "en" : "Suburban periphery",
+        "fr" : "Couronne périurbaine"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#URBAN_CENTER",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "URBAN_CENTER",
+        "en" : "Urban center",
+        "fr" : "Pôle urbain"
+      }
+    } ],
+    "comment" : {
+      "en" : "Defines the category of the zone delimiting the urban project, ex. urban aera, suburban periphery, urban center.",
+      "fr" : "Définit la catégorie de la zone délimitant le projet urbain, ex. pôle urbain, couronne périurbaine, espace rural."
+    },
+    "id" : "81"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#Health",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Health",
+      "en" : "Health",
+      "fr" : "Santé"
+    },
+    "individuals" : [ {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#MEDICAL_OFFICE",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "MEDICAL_OFFICE",
+        "en" : "Medical office",
+        "fr" : "Cabinet médical"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#PHARMACY",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "PHARMACY",
+        "en" : "Pharmacy",
+        "fr" : "Pharmacie"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#HOSPITAL",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "HOSPITAL",
+        "en" : "Hospital",
+        "fr" : "Hôpital"
+      }
+    } ],
+    "comment" : {
+      "en" : "Describes a building use for health purposes.",
+      "fr" : "Correspond à un usage de bâtiment à but sanitaire."
+    },
+    "id" : "58",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#GreenSpace",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GreenSpace",
+      "en" : "Green Space",
+      "fr" : "Surface espace vert"
+    },
+    "comment" : {
+      "fr" : "Surface d'espace vert prévu dans l'aménagement (m²/hab). Ce nombre rentre dans l'évaluation de la mixité fonctionnelle d'une zone urbaine donnée."
+    },
+    "id" : "82"
+  }, {
+    "iri" : "http://rdf.insee.fr/def/geo/insee-geo-onto.ttl#IRIS",
+    "baseIri" : "http://rdf.insee.fr/def/geo/insee-geo-onto.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IRIS"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "68"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#EnergySource",
+    "equivalent" : [ "19" ],
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "disjointUnion" : [ "85", "65" ],
+    "label" : {
+      "IRI-based" : "EnergySource",
+      "en" : "Energy source",
+      "fr" : "Source d'énérgie"
+    },
+    "subClasses" : [ "85", "65" ],
+    "comment" : {
+      "en" : "An energy source is a source, which can be renewable or non renewable,  from which useful energy can be extracted or recovered. \nIn our context, we focus on primary energy sources.",
+      "fr" : "Une source d'énergie est une source, qui peut être renouvelable ou non renouvelable, à partir de laquelle l'énergie utile peut être extraite ou récupérée.\nDans notre contexte, nous nous concentrons sur les sources d'énergie primaire."
+    },
+    "attributes" : [ "equivalent", "disjointUnion" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#Land",
+    "equivalent" : [ "90" ],
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Land",
+      "en" : "Land",
+      "fr" : "Terrain"
+    },
+    "comment" : {
+      "en" : "A land, in our context, is the largest urban object granularity level, which has different caracteristics (such as its inteded use, its constraints, etc.) that help conduct energy and environmental assessments at urban scale. A land can be made of one or multiple buildings.",
+      "fr" : "Un terrain, dans notre contexte, est le plus grand niveau de granularité d'objet urbain, qui présente des caractéristiques différentes (telles que son usage, ses contraintes, etc.) qui permettent d'effectuer des évaluations énergétiques et environnementales à l'échelle urbaine. Un terrain peut être composé d'un ou de plusieurs bâtiments."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "89",
+    "superClasses" : [ "87" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "91",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Renewable_Energy_Source",
+    "baseIri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Renewable_Energy_Source"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "98",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#PublicTransportScore",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PublicTransportScore",
+      "en" : "Public transport score",
+      "fr" : "Score arrêts de transport public"
+    },
+    "comment" : {
+      "fr" : "Il rentre dans l'évaluation de la mixité fonctionnelle d'une zone donnée. Ce score correspond au pourcentage de logements de l'aménagement situés à moins de 300m des arrêts de transport public."
+    },
+    "id" : "101"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#TradeScore",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TradeScore",
+      "en" : "Trade score",
+      "fr" : "Score commerces"
+    },
+    "comment" : {
+      "fr" : "Il rentre dans l'évaluation de la mixité fonctionnelle d'une zone donnée. Ce score correspond au pourcentage de logements de l'aménagement situés à moins de 240m des commerces."
+    },
+    "id" : "102"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#ParkingSpace",
+    "equivalent" : [ "103", "51" ],
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ParkingSpace",
+      "en" : "Parking area",
+      "fr" : "Surface de parking"
+    },
+    "comment" : {
+      "en" : "Corresponds to the parking space of a building, used for environmental impact assessments.",
+      "fr" : "Correspond à la surface de parking d'un bâtiment, utilisée dans les évaluations de l'impact environnemental."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "84"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#CarbonFootprint",
+    "equivalent" : [ "20" ],
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "disjointUnion" : [ "104", "28", "105" ],
+    "label" : {
+      "IRI-based" : "CarbonFootprint",
+      "en" : "Carbon footprint",
+      "fr" : "Empreinte carbone"
+    },
+    "subClasses" : [ "104", "28", "105" ],
+    "comment" : {
+      "en" : "A carbon footprint is the amount of carbon dioxide released into the atmosphere as a result of an urban planning activity.",
+      "fr" : "Une empreinte carbone est la quantité de dioxyde de carbone libérée dans l'atmosphère à la suite d'une activité d'aménagement urbain."
+    },
+    "attributes" : [ "equivalent", "disjointUnion" ],
+    "id" : "29",
+    "superClasses" : [ "73" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "109",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#Cultural",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Cultural",
+      "fr" : "Culturel"
+    },
+    "individuals" : [ {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#MUSEUM",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "MUSEUM",
+        "en" : "Museum",
+        "fr" : "Musée"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#THEATER",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "THEATER",
+        "en" : "Theater",
+        "fr" : "Théatre"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#CONSERVATORY",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "CONSERVATORY",
+        "en" : "Conservatory",
+        "fr" : "Conservatoire"
+      }
+    } ],
+    "comment" : {
+      "en" : "Cultural",
+      "fr" : "Correspond à un usage de bâtiment à but culturel."
+    },
+    "id" : "57",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Energy_Performance_Indicator",
+    "baseIri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Energy_Performance_Indicator"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#NumberOfBuildings",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NumberOfBuildings",
+      "en" : "Number of buildings",
+      "fr" : "Nombre de bâtiments"
+    },
+    "comment" : {
+      "en" : "Determines the number of buildings in a given urban zone.",
+      "fr" : "Correspond au nombre de bâtiments dans la zone urbaine."
+    },
+    "id" : "100"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "75",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Building_Typology",
+    "baseIri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Building_Typology"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "131",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL/#IfcBuilding",
+    "baseIri" : "https://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IfcBuilding"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://cui.unige.ch/isi/onto/citygml2.0.owl#Building",
+    "baseIri" : "http://cui.unige.ch/isi/onto/citygml2.0.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Building"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "133"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#MixedUse",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MixedUse",
+      "en" : "Mixed use",
+      "fr" : "Mixité fonctionnelle"
+    },
+    "comment" : {
+      "en" : "A mixed use in an urban area is the fact that functions (such as housing, commerce, hospitals, sports, etc.) are represented there.",
+      "fr" : "Une mixité fonctionnelle dans une zone urbaine est le fait que les fonctions (ex: habitat, commerce, hospitalières, sportives, etc.) y soient représentées."
+    },
+    "id" : "35",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "121",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "3",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://rdf.insee.fr/def/geo/insee-geo-onto.ttl#Commune",
+    "baseIri" : "http://rdf.insee.fr/def/geo/insee-geo-onto.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Commune"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "137"
+  }, {
+    "iri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Boiler",
+    "baseIri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Boiler"
+    },
+    "attributes" : [ "external" ],
+    "id" : "144"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#TourismAndTansport",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TourismAndTansport",
+      "en" : "Tourism and transport",
+      "fr" : "Tourisme et transport"
+    },
+    "individuals" : [ {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#TAXI",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "TAXI",
+        "en" : "Taxi",
+        "fr" : "Taxi"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#HOTEL",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "HOTEL",
+        "en" : "Hotel",
+        "fr" : "hôtel"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#AIRPORT",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "AIRPORT",
+        "en" : "Airport",
+        "fr" : "Aéroport"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#TRAIN_STATION",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "TRAIN_STATION",
+        "en" : "Train station",
+        "fr" : "Gare de train"
+      }
+    } ],
+    "comment" : {
+      "en" : "Describes a building use intended for tourism and transport.",
+      "fr" : "Correspond à un usage de bâtiment destiné au tourisme et au transport."
+    },
+    "id" : "61",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#LandUse",
+    "equivalent" : [ "43" ],
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LandUse",
+      "en" : "Land use",
+      "fr" : "Usage du sol"
+    },
+    "individuals" : [ {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#TRANSPORTATION",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "TRANSPORTATION",
+        "en" : "Transportation",
+        "fr" : "Transport"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#FORESTRY",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "FORESTRY",
+        "en" : "Forestry",
+        "fr" : "Forêt"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#MINING",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "MINING",
+        "en" : "Mining",
+        "fr" : "Minière"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#PARK",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "PARK",
+        "en" : "Park",
+        "fr" : "Jardin public"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#ROADS",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "ROADS",
+        "en" : "Roads",
+        "fr" : "Voiries"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#AGRICULTURE",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "AGRICULTURE",
+        "en" : "Agriculture",
+        "fr" : "Agriculture"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#CYCLEWAY",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "CYCLEWAY",
+        "en" : "Cycleway",
+        "fr" : "Piste cyclable"
+      }
+    } ],
+    "subClasses" : [ "119", "10", "77", "50" ],
+    "comment" : {
+      "en" : "A land use corresponds to the element related to what it is used for.",
+      "fr" : "Un usage du sol correspond à un élément relatif à ce quoi il est utilisé."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "11",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#Use",
+    "equivalent" : [ "26" ],
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Use",
+      "en" : "Use",
+      "fr" : "Usage"
+    },
+    "subClasses" : [ "25", "11" ],
+    "comment" : {
+      "en" : "A use corresponds to the element related to what a building or land is used for.",
+      "fr" : "Un usage correspond à un élément relatif à ce quoi un bâtiment ou un terrain est utilisé."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#City",
+    "equivalent" : [ "137" ],
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "City",
+      "en" : "City",
+      "fr" : "Commune"
+    },
+    "comment" : {
+      "en" : "Country, region, department, city, and district are different granularity levels of address. Possible \"hasPart\" relationships are possible among them.\n\nInstances of these concepts can be provided by an open data source, such as INSEE, Open Data, etc. Thus, for each concept, it is possible to add an equivalent set enumerating all provided instances."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "71",
+    "superClasses" : [ "64" ]
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#Education",
+    "equivalent" : [ "42" ],
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Education",
+      "en" : "Education",
+      "fr" : "Enseignement"
+    },
+    "subClasses" : [ "41", "47", "5" ],
+    "comment" : {
+      "en" : "Describes a building use for education purposes.",
+      "fr" : "Correspond à un usage de bâtiment à but educatif."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "6",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#Building",
+    "equivalent" : [ "0", "132", "133" ],
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Building",
+      "en" : "Building",
+      "fr" : "Bâtiment"
+    },
+    "individuals" : [ {
+      "iri" : "http://exemple.com#bldg1",
+      "baseIri" : "http://exemple.com",
+      "labels" : {
+        "IRI-based" : "bldg1"
+      }
+    } ],
+    "comment" : {
+      "en" : "A building, in our context, is the finest urban object granularity level, which has different caracteristics (such as its inteded use, its typology, its expected energy performance, etc.) that help conduct energy and environmental assessments at urban scale.",
+      "fr" : "Un bâtiment, dans notre contexte, est le niveau de granularité d'objet urbain le plus fin, qui dispose de caractéristiques diverses (telles que son usage, sa typologie, sa performance énergétique attendue, etc.) utiles pour faire des évaluations énergétiques et environnementales à l'échelle urbaine."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "107",
+    "superClasses" : [ "87" ]
+  }, {
+    "iri" : "http://descartes-core.org/ontologies/lca/1.0/LCAPattern.owl#Flow",
+    "baseIri" : "http://descartes-core.org/ontologies/lca/1.0/LCAPattern.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Flow"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "151"
+  }, {
+    "iri" : "http://rdf.insee.fr/def/geo/insee-geo-onto.ttl#Region",
+    "baseIri" : "http://rdf.insee.fr/def/geo/insee-geo-onto.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Region"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "76"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#BoilerStation",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BoilerStation",
+      "en" : "District heating boiler station",
+      "fr" : "Chaufferie"
+    },
+    "id" : "155",
+    "superClasses" : [ "87" ]
+  }, {
+    "iri" : "http://cui.unige.ch/isi/onto/citygml2.0.owl#Surface",
+    "baseIri" : "http://cui.unige.ch/isi/onto/citygml2.0.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Surface"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "103"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#HumanDensityScore",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HumanDensityScore",
+      "en" : "Human density score",
+      "fr" : "Score densité humaine"
+    },
+    "comment" : {
+      "fr" : "Il rentre dans l'évaluation de la mixité fonctionnelle d'une zone donnée. Ce score correspond au nombre d'habitants par hectare."
+    },
+    "id" : "159"
+  }, {
+    "iri" : "http://rdf.insee.fr/def/demo/insee-demo-onto.ttl#PopulationLegale",
+    "baseIri" : "http://rdf.insee.fr/def/demo/insee-demo-onto.ttl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PopulationLegale"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Land_Use_By_Ownership_Constraints",
+    "baseIri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Land_Use_By_Ownership_Constraints"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#LowCarbonFootprint",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LowCarbonFootprint",
+      "en" : "Low carbon footprint",
+      "fr" : "Empreinte carbone faible"
+    },
+    "id" : "105",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Land",
+    "baseIri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Land"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "90"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#RenewableEnergySource",
+    "equivalent" : [ "97" ],
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RenewableEnergySource",
+      "en" : "Renewable energy source",
+      "fr" : "Source d'énergie non renouvelable"
+    },
+    "individuals" : [ {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#HYDRO",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "HYDRO",
+        "en" : "Hydro",
+        "fr" : "Hydraulique"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#GEOTHERMAL",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "GEOTHERMAL",
+        "en" : "Geothermal",
+        "fr" : "Géothermique"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#BIOMASS",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "BIOMASS",
+        "en" : "Biomass",
+        "fr" : "Biomasse"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#SOLAR",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "SOLAR",
+        "en" : "Solar",
+        "fr" : "Solaire"
+      }
+    } ],
+    "comment" : {
+      "en" : "A renewable energy source corresponds to a resource that is naturally replenished on a human timescale.",
+      "fr" : "Une source d'énergie renouvelable correspond à une ressource naturellement reconstituée à l'échelle humaine."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "85",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Land_Use_By_Activity",
+    "baseIri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Land_Use_By_Activity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "119",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL/#IfcAddress",
+    "baseIri" : "https://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IfcAddress"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "72"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#Zone",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Zone",
+      "en" : "Zone",
+      "fr" : "Zone"
+    },
+    "comment" : {
+      "en" : "Defines a virtual zone made of a set of objects.",
+      "fr" : "Definit une zone virtuelle formée par un ensemble d'objets."
+    },
+    "id" : "88"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#BuildingConfiguration",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BuildingConfiguration",
+      "en" : "Building configuration",
+      "fr" : "Configuration de bâtiment"
+    },
+    "individuals" : [ {
+      "iri" : "http://exemple.com#bldg_config",
+      "baseIri" : "http://exemple.com",
+      "labels" : {
+        "IRI-based" : "bldg_config"
+      }
+    } ],
+    "comment" : {
+      "en" : "A building configuration consists in defining the characteristics associated to the urban planning project related to a building, in particular the typology of this building, its construction type, the targeted energy performance, the energy sources for heating and domestic hot water, the parking area and the land use constraints of to be respected.",
+      "fr" : "Une configuration de bâtiment consiste en la définition des caractériques associées au projet d'aménagement lié à ce bâtiment, en particulier la typologie d'usage du bâtiment, son système constructif, la performance énergétique visée, les sources énergétiques pour le chauffage et eau chaude sanitaire, la surface de parking, les contraintes du terrain à respecter."
+    },
+    "id" : "34",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "177",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#EnvironmentalImpact",
+    "equivalent" : [ "151" ],
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EnvironmentalImpact",
+      "en" : "Indicator",
+      "fr" : "Environmental impact"
+    },
+    "subClasses" : [ "16", "29" ],
+    "comment" : {
+      "en" : "An environmental impact is a change that affects the environment, whether adverse or beneficial, wholly or partially, resulting from an urban planning activity.",
+      "fr" : "Un impact environnemental est un changement qui affecte l'environnement, qu'il soit défavorable ou bénéfique, en tout ou en partie, résultant d'une activité d'aménagement urbain."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "73"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#CyclingSurfaceScore",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CyclingSurfaceScore",
+      "en" : "Cycling surface score",
+      "fr" : "Score surface cyclable"
+    },
+    "comment" : {
+      "fr" : "Il rentre dans l'évaluation de la mixité fonctionnelle d'une zone donnée. Ce score correspond au pourcentage de surface cyclable par rapport à la surface de voirie."
+    },
+    "id" : "178"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#MediumCarbonFootprint",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MediumCarbonFootprint",
+      "en" : "Medium carbon footprint",
+      "fr" : "Empreinte carbone moyenne"
+    },
+    "id" : "104",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#IndividualsServices",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IndividualsServices",
+      "en" : "Individuals services",
+      "fr" : "Serivces aux articuliers"
+    },
+    "individuals" : [ {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#RESTAURANT",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "RESTAURANT",
+        "en" : "Restaurant",
+        "fr" : "Restaurant"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#POLICE",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "POLICE",
+        "en" : "Police",
+        "fr" : "Police"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#POST_OFFICE",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "POST_OFFICE",
+        "en" : "Post office",
+        "fr" : "Burea de poste"
+      }
+    }, {
+      "iri" : "https://www.nobatek.inef4.com/dataview/onto#HAIRDRESSING",
+      "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+      "labels" : {
+        "IRI-based" : "HAIRDRESSING",
+        "en" : "Hair dressing",
+        "fr" : "Salon de coiffure"
+      }
+    } ],
+    "comment" : {
+      "en" : "Describes a building use intended for services to individuals.",
+      "fr" : "Correspond à un usage de bâtiment destiné aux services aux particuliers."
+    },
+    "id" : "59",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Bottom_Floor_Type",
+    "baseIri" : "http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bottom_Floor_Type"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "80"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#Country",
+    "equivalent" : [ "30" ],
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Country",
+      "en" : "Country",
+      "fr" : "Pays"
+    },
+    "comment" : {
+      "en" : "Country, region, department, city, and district are different granularity levels of address. Possible \"hasPart\" relationships are possible among them.\n\nInstances of these concepts can be provided by an open data source, such as INSEE, Open Data, etc. Thus, for each concept, it is possible to add an equivalent set enumerating all provided instances."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "69",
+    "superClasses" : [ "64" ]
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#Object",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Object",
+      "en" : "Urban object",
+      "fr" : "Objet urbain"
+    },
+    "subClasses" : [ "155", "89", "107" ],
+    "comment" : {
+      "en" : "An urban object corresponds to a land, a building or a boiler station in an urban zone",
+      "fr" : "Un object urbain est un terrain, un bâtiment ou une chaudière dans une zone urbaine."
+    },
+    "id" : "87"
+  } ],
+  "property" : [ {
+    "id" : "2",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "86",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "92",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "93",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "94",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "95",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "96",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "99",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "106",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "110",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "111",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "112",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "113",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "114",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "115",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "116",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "117",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "120",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "134",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "135",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "136",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "138",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "139",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "140",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "141",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "149",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "150",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "153",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "157",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "160",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "163",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "167",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "168",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "169",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "170",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "171",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "172",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "173",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "174",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "175",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "176",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "179",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "180",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "183",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#length",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "length"
+    },
+    "maxCardinality" : "1",
+    "domain" : "3",
+    "comment" : {
+      "fr" : "en \"Km\""
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "3",
+    "subproperty" : [ "9" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#power",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "power"
+    },
+    "maxCardinality" : "1",
+    "domain" : "3",
+    "comment" : {
+      "fr" : "en \"MWh\""
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "36"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#co2Emissions",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "co2Emissions"
+    },
+    "maxCardinality" : "1",
+    "domain" : "3",
+    "comment" : {
+      "fr" : "en \"Kg/KWh\""
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "value"
+    },
+    "domain" : "84",
+    "attributes" : [ "allValues", "datatype", "external" ],
+    "id" : "83"
+  }, {
+    "range" : "88",
+    "domain" : "87",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "range" : "91",
+    "label" : {
+      "IRI-based" : "value"
+    },
+    "domain" : "38",
+    "attributes" : [ "allValues", "datatype", "external" ],
+    "id" : "92"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#hasConstraints",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasConstraints"
+    },
+    "domain" : "87",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "93"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#hasAddress",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "hasAddress"
+    },
+    "domain" : "87",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "94"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#hasImpact",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasImpact"
+    },
+    "domain" : "35",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "95"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#isAppliedOn",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "isAppliedOn"
+    },
+    "domain" : "35",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "value"
+    },
+    "domain" : "100",
+    "attributes" : [ "allValues", "datatype", "external" ],
+    "id" : "99"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#hasPart",
+    "inverse" : "108",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "range" : "107",
+    "label" : {
+      "IRI-based" : "hasPart"
+    },
+    "domain" : "89",
+    "attributes" : [ "allValues", "transitive", "object" ],
+    "id" : "106"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#hasLandUse",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasLandUse"
+    },
+    "domain" : "89",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "110"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#isAppliedOn",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "range" : "107",
+    "label" : {
+      "IRI-based" : "isAppliedOn"
+    },
+    "domain" : "34",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "111"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#hasEnergyCarrier",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "hasEnergyCarrier"
+    },
+    "domain" : "107",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "112"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#renewableEnergyRate",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "range" : "109",
+    "label" : {
+      "IRI-based" : "renewableEnergyRate"
+    },
+    "domain" : "66",
+    "attributes" : [ "allValues", "datatype" ],
+    "id" : "113"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#hasImpact",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "hasImpact"
+    },
+    "domain" : "34",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "114"
+  }, {
+    "range" : "89",
+    "domain" : "107",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "115"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#hasTargetEnergyPerformance",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasTargetEnergyPerformance"
+    },
+    "domain" : "107",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "116"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#hasEnergySource",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "hasEnergySource"
+    },
+    "domain" : "107",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "117"
+  }, {
+    "range" : "11",
+    "domain" : "119",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "118"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#gpsCoordinates",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "range" : "121",
+    "label" : {
+      "IRI-based" : "gpsCoordinates"
+    },
+    "maxCardinality" : "1",
+    "domain" : "3",
+    "attributes" : [ "datatype" ],
+    "id" : "120"
+  }, {
+    "range" : "11",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "122"
+  }, {
+    "range" : "11",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "123"
+  }, {
+    "range" : "29",
+    "domain" : "105",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "124"
+  }, {
+    "range" : "29",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "125"
+  }, {
+    "range" : "32",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "126"
+  }, {
+    "range" : "32",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "127"
+  }, {
+    "range" : "66",
+    "domain" : "85",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "128"
+  }, {
+    "range" : "29",
+    "domain" : "104",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "129"
+  }, {
+    "range" : "66",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "130"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#hasGreenSpace",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "hasGreenSpace"
+    },
+    "domain" : "88",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "134"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#hasNumberOfBuildings",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "range" : "100",
+    "label" : {
+      "IRI-based" : "hasNumberOfBuildings"
+    },
+    "domain" : "88",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "135"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#hasNumberOfInhabitants",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "hasNumberOfInhabitants"
+    },
+    "domain" : "88",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "136"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#hasPart",
+    "inverse" : "108",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "range" : "87",
+    "label" : {
+      "IRI-based" : "hasPart"
+    },
+    "domain" : "88",
+    "attributes" : [ "allValues", "transitive", "object" ],
+    "id" : "138"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#hasZoneType",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "range" : "81",
+    "label" : {
+      "IRI-based" : "hasZoneType"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "88",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "139"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#hasAddress",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "hasAddress"
+    },
+    "domain" : "88",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "140"
+  }, {
+    "range" : "16",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "141"
+  }, {
+    "range" : "16",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "142"
+  }, {
+    "range" : "73",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "143"
+  }, {
+    "range" : "16",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "145"
+  }, {
+    "range" : "64",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "146"
+  }, {
+    "range" : "64",
+    "domain" : "67",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "147"
+  }, {
+    "range" : "64",
+    "domain" : "63",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "148"
+  }, {
+    "range" : "25",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "149"
+  }, {
+    "range" : "25",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "150"
+  }, {
+    "range" : "64",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "152"
+  }, {
+    "range" : "64",
+    "domain" : "69",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "153"
+  }, {
+    "range" : "25",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "154"
+  }, {
+    "range" : "25",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "156"
+  }, {
+    "range" : "25",
+    "domain" : "60",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "157"
+  }, {
+    "range" : "25",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "158"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "160"
+  }, {
+    "range" : "6",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "161"
+  }, {
+    "range" : "25",
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "162"
+  }, {
+    "range" : "27",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "163"
+  }, {
+    "range" : "11",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "164"
+  }, {
+    "range" : "6",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "165"
+  }, {
+    "range" : "27",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "166"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#isPartOf",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "isPartOf"
+    },
+    "domain" : "64",
+    "attributes" : [ "allValues", "transitive", "object" ],
+    "id" : "167"
+  }, {
+    "range" : "107",
+    "domain" : "155",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "168"
+  }, {
+    "range" : "89",
+    "domain" : "155",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "169"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#hasEnergySource",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "hasEnergySource"
+    },
+    "domain" : "155",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "170"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#hasParkingSurface",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "hasParkingSurface"
+    },
+    "domain" : "107",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "171"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#hasConstructionType",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "range" : "79",
+    "label" : {
+      "IRI-based" : "hasConstructionType"
+    },
+    "domain" : "107",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "172"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#hasBuildingUse",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "hasBuildingUse"
+    },
+    "domain" : "107",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "173"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#hasTypology",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "hasTypology"
+    },
+    "domain" : "107",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "174"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#addressCode",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "range" : "131",
+    "label" : {
+      "IRI-based" : "addressCode"
+    },
+    "maxCardinality" : "1",
+    "domain" : "3",
+    "attributes" : [ "datatype" ],
+    "id" : "175"
+  }, {
+    "iri" : "https://www.nobatek.inef4.com/dataview/onto#addressName",
+    "baseIri" : "https://www.nobatek.inef4.com/dataview/onto",
+    "range" : "177",
+    "label" : {
+      "IRI-based" : "addressName"
+    },
+    "domain" : "64",
+    "attributes" : [ "allValues", "datatype" ],
+    "id" : "176"
+  }, {
+    "range" : "87",
+    "domain" : "107",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "179"
+  }, {
+    "range" : "33",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "180"
+  }, {
+    "range" : "73",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "181"
+  }, {
+    "range" : "87",
+    "domain" : "89",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "182"
+  }, {
+    "range" : "87",
+    "domain" : "155",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "183"
+  } ]
+}
