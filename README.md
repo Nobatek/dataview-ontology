@@ -5,7 +5,7 @@ It encapsulates common vocabularies among these tools as well as vocabularies fr
 
 
 ![alt text](./dvo_multilayer_onto.jpg)
-![alt text](./dvo_general.jpg)
+![alt text](./dvo_general.JPG)
 
 The ontology is aligned with other existing ontologies such as:
 - [ifcOWL](https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/ontology.ttl)
