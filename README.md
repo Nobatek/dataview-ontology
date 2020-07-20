@@ -21,4 +21,6 @@ The ontology is aligned with other existing ontologies such as:
 - [cityGMLOWL](http://cui.unige.ch/isi/onto/citygml2.0.owl) 
 - [SEMANCO](http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl) 
 - [LCA Pattern](http://descartes-core.org/ontologies/lca/1.0/LCAPattern.owl) 
+- [INSEE-DEMO-ONTO](http://rdf.insee.fr/def/demo/insee-demo-onto.ttl)
+- [INSEE-GEO-ONTO](https://github.com/InseeFr/Ontologies/blob/master/insee-geo.ttl)
 
