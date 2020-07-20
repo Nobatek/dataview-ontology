@@ -1,6 +1,6 @@
 **DataView Ontology (dvo)**
 
-DataView Ontology defines core concepts and relations for urban data used by *Nobatek/INEF4* tools for environmental and energy assessments such as lifecyle assessments of sustainable territories and decision support evaluations for the design of optimal district heating.
+DataView Ontology defines core concepts and relations for urban data relevant to *Nobatek/INEF4* tools for environmental and energy assessments such as lifecyle assessments of sustainable territories and decision support evaluations for the design of optimal district heating.
 It encapsulates common vocabularies among these tools as well as vocabularies from open and public urban data sources (such as *INSEE* and *Open StreetMap*).
 
 The ontology is multi-layered. It encapsulates 4 main layers:
