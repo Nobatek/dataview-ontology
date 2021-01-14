@@ -1,0 +1,1819 @@
+@prefix : <https://www.nobatek.inef4.com/dataview/onto#> .
+@prefix ex: <http://example.com#> .
+@prefix dvo: <https://www.nobatek.inef4.com/dataview/onto#> .
+@prefix ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL/#> .
+@prefix lca: <http://descartes-core.org/ontologies/lca/1.0/LCAPattern.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sumo: <http://www.ontologyportal.org/SUMO.owl#> .
+@prefix citygml: <http://cui.unige.ch/isi/onto/citygml2.0.owl#> .
+@prefix semanco: <http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#> .
+@prefix insee-geo: <http://rdf.insee.fr/def/geo/insee-geo-onto.ttl#> .
+@prefix insee-demo: <http://rdf.insee.fr/def/demo/insee-demo-onto.ttl#> .
+@base <https://www.nobatek.inef4.com/dataview/onto> .
+
+<https://www.nobatek.inef4.com/dataview/onto> rdf:type owl:Ontology ;
+                                               owl:versionIRI <https://www.nobatek.inef4.com/dataview/onto/0.1.6> ;
+                                               <http://purl.org/dc/elements/1.1/contributor> "Ana Roxin" ,
+                                                                                             "Christophe Nicolle" ,
+                                                                                             "Laboratoire Connaissance et Intelligence Artificielle Distribuées (CIAD)"@fr ,
+                                                                                             "Laboratoire d'Informatique de Bourgogne (LIB)"@fr ,
+                                                                                             "Nobatek/INEF4, Institut pour la Transition Energétique (ITE)"@fr ,
+                                                                                             "SAYENS, SATT, catalyseur d'innovations"@fr ;
+                                               <http://purl.org/dc/elements/1.1/description> "DataView Ontology defines core concepts and relations for urban data used by Nobatek/INEF4 tools for environmental and energy assessments such as lifecyle assessments of sustainable territories and decision support evaluations for the design of optimal urban heating networks. It encapsulates common vocabularies among these tools as well as vocabularies from open and public urban data sources."@en ;
+                                               <http://purl.org/dc/elements/1.1/title> "DataView Ontology"@en ;
+                                               <http://purl.org/dc/terms/created> "2020-01-15" ;
+                                               <http://purl.org/dc/terms/creator> "Nathalie Charbel" ;
+                                               rdf:value "" ;
+                                               owl:versionInfo "0.1.6" ;
+                                               dvo:preferredNamespacePrefix "dvo" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+rdf:value rdf:type owl:AnnotationProperty .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#preferredNamespacePrefix
+dvo:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://www.nobatek.inef4.com/dataview/onto#hasAddress
+dvo:hasAddress rdf:type owl:ObjectProperty .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#hasBuildingUse
+dvo:hasBuildingUse rdf:type owl:ObjectProperty .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#hasConstraints
+dvo:hasConstraints rdf:type owl:ObjectProperty .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#hasConstructionType
+dvo:hasConstructionType rdf:type owl:ObjectProperty .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#hasEnergyCarrier
+dvo:hasEnergyCarrier rdf:type owl:ObjectProperty .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#hasEnergySource
+dvo:hasEnergySource rdf:type owl:ObjectProperty .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#hasGreenSpace
+dvo:hasGreenSpace rdf:type owl:ObjectProperty .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#hasImpact
+dvo:hasImpact rdf:type owl:ObjectProperty .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#hasLandUse
+dvo:hasLandUse rdf:type owl:ObjectProperty .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#hasNumberOfBuildings
+dvo:hasNumberOfBuildings rdf:type owl:ObjectProperty .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#hasNumberOfInhabitants
+dvo:hasNumberOfInhabitants rdf:type owl:ObjectProperty .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#hasParkingSurface
+dvo:hasParkingSurface rdf:type owl:ObjectProperty .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#hasPart
+dvo:hasPart rdf:type owl:ObjectProperty ;
+            owl:inverseOf dvo:isPartOf .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#hasTargetEnergyPerformance
+dvo:hasTargetEnergyPerformance rdf:type owl:ObjectProperty .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#hasTypology
+dvo:hasTypology rdf:type owl:ObjectProperty .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#hasZoneType
+dvo:hasZoneType rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#isAppliedOn
+dvo:isAppliedOn rdf:type owl:ObjectProperty .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#isPartOf
+dvo:isPartOf rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://www.nobatek.inef4.com/dataview/onto#addressCode
+dvo:addressCode rdf:type owl:DatatypeProperty .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#addressName
+dvo:addressName rdf:type owl:DatatypeProperty .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#co2Emissions
+dvo:co2Emissions rdf:type owl:DatatypeProperty ;
+                 rdfs:comment "en \"Kg/KWh\""@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#gpsCoordinates
+dvo:gpsCoordinates rdf:type owl:DatatypeProperty .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#length
+dvo:length rdf:type owl:DatatypeProperty ;
+           rdfs:comment "en \"Km\""@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#power
+dvo:power rdf:type owl:DatatypeProperty ;
+          rdfs:comment "en \"MWh\""@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#renewableEnergyRate
+dvo:renewableEnergyRate rdf:type owl:DatatypeProperty .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#value
+dvo:value rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://cui.unige.ch/isi/onto/citygml2.0.owl#Address
+citygml:Address rdf:type owl:Class ;
+                owl:equivalentClass dvo:Address .
+
+
+###  http://cui.unige.ch/isi/onto/citygml2.0.owl#Building
+citygml:Building rdf:type owl:Class ;
+                 owl:equivalentClass dvo:Building .
+
+
+###  http://cui.unige.ch/isi/onto/citygml2.0.owl#LandUse
+citygml:LandUse rdf:type owl:Class ;
+                owl:equivalentClass dvo:LandUse .
+
+
+###  http://cui.unige.ch/isi/onto/citygml2.0.owl#Surface
+citygml:Surface rdf:type owl:Class ;
+                owl:equivalentClass dvo:ParkingSpace .
+
+
+###  http://descartes-core.org/ontologies/lca/1.0/LCAPattern.owl#Activity
+lca:Activity rdf:type owl:Class .
+
+
+###  http://descartes-core.org/ontologies/lca/1.0/LCAPattern.owl#Flow
+lca:Flow rdf:type owl:Class ;
+         owl:equivalentClass dvo:EnvironmentalImpact .
+
+
+###  http://rdf.insee.fr/def/demo/insee-demo-onto.ttl#PopulationLegale
+insee-demo:PopulationLegale rdf:type owl:Class ;
+                            owl:equivalentClass dvo:NumberOfInhabitants .
+
+
+###  http://rdf.insee.fr/def/geo/insee-geo-onto.ttl#Commune
+insee-geo:Commune rdf:type owl:Class ;
+                  owl:equivalentClass dvo:City .
+
+
+###  http://rdf.insee.fr/def/geo/insee-geo-onto.ttl#Departement
+insee-geo:Departement rdf:type owl:Class ;
+                      owl:equivalentClass dvo:Department .
+
+
+###  http://rdf.insee.fr/def/geo/insee-geo-onto.ttl#IRIS
+insee-geo:IRIS rdf:type owl:Class ;
+               owl:equivalentClass dvo:District .
+
+
+###  http://rdf.insee.fr/def/geo/insee-geo-onto.ttl#Pays
+insee-geo:Pays rdf:type owl:Class ;
+               owl:equivalentClass dvo:Country .
+
+
+###  http://rdf.insee.fr/def/geo/insee-geo-onto.ttl#Region
+insee-geo:Region rdf:type owl:Class ;
+                 owl:equivalentClass dvo:Region .
+
+
+###  http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Address
+semanco:Address rdf:type owl:Class ;
+                owl:equivalentClass dvo:Address .
+
+
+###  http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Boiler
+semanco:Boiler rdf:type owl:Class .
+
+
+###  http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Bottom_Floor_Type
+semanco:Bottom_Floor_Type rdf:type owl:Class ;
+                          owl:equivalentClass dvo:ConstructionType .
+
+
+###  http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Building_Typology
+semanco:Building_Typology rdf:type owl:Class ;
+                          owl:equivalentClass dvo:BuildingTypology .
+
+
+###  http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Building_Use
+semanco:Building_Use rdf:type owl:Class ;
+                     owl:equivalentClass dvo:BuildingUse .
+
+
+###  http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Carbon_Monoxide
+semanco:Carbon_Monoxide rdf:type owl:Class ;
+                        owl:equivalentClass dvo:CarbonFootprint .
+
+
+###  http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Commercial_Building_And_Other_Specialised_Structures
+semanco:Commercial_Building_And_Other_Specialised_Structures rdf:type owl:Class ;
+                                                             owl:equivalentClass dvo:Commercial .
+
+
+###  http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Educational
+semanco:Educational rdf:type owl:Class ;
+                    owl:equivalentClass dvo:Education .
+
+
+###  http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Energy_Performance_Indicator
+semanco:Energy_Performance_Indicator rdf:type owl:Class ;
+                                     owl:equivalentClass dvo:EnergyPerformance .
+
+
+###  http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Energy_Source
+semanco:Energy_Source rdf:type owl:Class ;
+                      owl:equivalentClass dvo:EnergySource .
+
+
+###  http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Higher_Education
+semanco:Higher_Education rdf:type owl:Class ;
+                         owl:equivalentClass dvo:HigherEducation .
+
+
+###  http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Intermediate_Floor_Type
+semanco:Intermediate_Floor_Type rdf:type owl:Class ;
+                                owl:equivalentClass dvo:ConstructionType .
+
+
+###  http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Land
+semanco:Land rdf:type owl:Class ;
+             owl:equivalentClass dvo:Land .
+
+
+###  http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Land_Use_By_Activity
+semanco:Land_Use_By_Activity rdf:type owl:Class ;
+                             rdfs:subClassOf dvo:LandUse .
+
+
+###  http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Land_Use_By_Economic_Function
+semanco:Land_Use_By_Economic_Function rdf:type owl:Class ;
+                                      rdfs:subClassOf dvo:LandUse .
+
+
+###  http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Land_Use_By_Ownership_Constraints
+semanco:Land_Use_By_Ownership_Constraints rdf:type owl:Class ;
+                                          owl:equivalentClass dvo:LandUseConstraints .
+
+
+###  http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Land_Use_By_Site_Development
+semanco:Land_Use_By_Site_Development rdf:type owl:Class ;
+                                     rdfs:subClassOf dvo:LandUse .
+
+
+###  http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Land_Use_By_Type_Of_Structure
+semanco:Land_Use_By_Type_Of_Structure rdf:type owl:Class ;
+                                      rdfs:subClassOf dvo:LandUse .
+
+
+###  http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Not-Renewable_Energy_Source
+semanco:Not-Renewable_Energy_Source rdf:type owl:Class ;
+                                    owl:equivalentClass dvo:NonRenewableEnergySource .
+
+
+###  http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Population_Size
+semanco:Population_Size rdf:type owl:Class ;
+                        owl:equivalentClass dvo:NumberOfInhabitants .
+
+
+###  http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Primary_Education
+semanco:Primary_Education rdf:type owl:Class ;
+                          owl:equivalentClass dvo:PrimarySchool .
+
+
+###  http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Renewable_Energy_Source
+semanco:Renewable_Energy_Source rdf:type owl:Class ;
+                                owl:equivalentClass dvo:RenewableEnergySource .
+
+
+###  http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#Sports_Facilities
+semanco:Sports_Facilities rdf:type owl:Class ;
+                          owl:equivalentClass dvo:SportsAndLeisure .
+
+
+###  http://semanco-tools.eu/ontology-releases/eu/semanco/ontology/SEMANCO/SEMANCO.owl#SurfaceAttribute
+semanco:SurfaceAttribute rdf:type owl:Class ;
+                         owl:equivalentClass dvo:ParkingSpace .
+
+
+###  http://www.ontologyportal.org/SUMO.owl#Building
+sumo:Building rdf:type owl:Class ;
+              owl:equivalentClass dvo:Building .
+
+
+###  https://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL/#IfcAddress
+ifc:IfcAddress rdf:type owl:Class ;
+               owl:equivalentClass dvo:Address .
+
+
+###  https://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL/#IfcBuilding
+ifc:IfcBuilding rdf:type owl:Class ;
+                owl:equivalentClass dvo:Building .
+
+
+###  https://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL/#IfcConstructionMaterialResourceType
+ifc:IfcConstructionMaterialResourceType rdf:type owl:Class ;
+                                        owl:equivalentClass dvo:ConstructionType .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#Address
+dvo:Address rdf:type owl:Class ;
+            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                              owl:onProperty dvo:isPartOf ;
+                              owl:allValuesFrom dvo:Address
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty dvo:addressName ;
+                              owl:allValuesFrom xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty dvo:addressCode ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:integer
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty dvo:gpsCoordinates ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ;
+            rdfs:comment """L'adresse d'un objet urbain ou d'une zone urbaine. 
+Elle est caractérisée par son nom, son code et ses coordonnées gps.
+Elle peut faire partie d'autres addresses."""@fr ,
+                         """The address of an urban object or urban zone.
+It refers to its name, code and gps coordinates.
+It can be encapsulated by other addresses as well."""@en ;
+            rdfs:label "Address"@en ,
+                       "Adresse"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#BoilerStation
+dvo:BoilerStation rdf:type owl:Class ;
+                  rdfs:subClassOf dvo:Object ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty dvo:hasEnergySource ;
+                                    owl:allValuesFrom dvo:EnergySource
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty dvo:hasEnergyCarrier ;
+                                    owl:hasValue dvo:DISTRICT_HEATING
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty dvo:co2Emissions ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onDataRange xsd:decimal
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty dvo:length ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onDataRange xsd:decimal
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty dvo:power ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onDataRange xsd:decimal
+                                  ] ;
+                  owl:disjointWith dvo:Building ,
+                                   dvo:Land ;
+                  rdfs:label "Boiler Station"@en ,
+                             "Chaufferie"@fr ,
+                             "District heating boiler station"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#Building
+dvo:Building rdf:type owl:Class ;
+             rdfs:subClassOf dvo:Object ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty dvo:hasBuildingUse ;
+                               owl:allValuesFrom dvo:BuildingUse
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty dvo:hasConstructionType ;
+                               owl:allValuesFrom dvo:ConstructionType
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty dvo:hasEnergyCarrier ;
+                               owl:allValuesFrom dvo:EnergyCarrier
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty dvo:hasEnergySource ;
+                               owl:allValuesFrom dvo:EnergySource
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty dvo:hasParkingSurface ;
+                               owl:allValuesFrom dvo:ParkingSpace
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty dvo:hasTargetEnergyPerformance ;
+                               owl:allValuesFrom dvo:EnergyPerformance
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty dvo:hasTypology ;
+                               owl:allValuesFrom dvo:BuildingTypology
+                             ] ;
+             owl:disjointWith dvo:Land ;
+             rdfs:comment "A building, in our context, is the finest urban object granularity level, which has different caracteristics (such as its inteded use, its typology, its expected energy performance, etc.) that help conduct energy and environmental assessments at urban scale."@en ,
+                          "Un bâtiment, dans notre contexte, est le niveau de granularité d'objet urbain le plus fin, qui dispose de caractéristiques diverses (telles que son usage, sa typologie, sa performance énergétique attendue, etc.) utiles pour faire des évaluations énergétiques et environnementales à l'échelle urbaine."@fr ;
+             rdfs:label "Building"@en ,
+                        "Bâtiment"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#BuildingConfiguration
+dvo:BuildingConfiguration rdf:type owl:Class ;
+                          owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty dvo:hasConstructionType ;
+                                                                       owl:allValuesFrom dvo:ConstructionType
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty dvo:hasEnergyCarrier ;
+                                                                       owl:allValuesFrom dvo:EnergyCarrier
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty dvo:hasEnergySource ;
+                                                                       owl:allValuesFrom dvo:EnergySource
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty dvo:hasTargetEnergyPerformance ;
+                                                                       owl:allValuesFrom dvo:EnergyPerformance
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty dvo:hasTypology ;
+                                                                       owl:allValuesFrom dvo:BuildingTypology
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty dvo:hasZoneType ;
+                                                                       owl:allValuesFrom dvo:ZoneCategory
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty dvo:isPartOf ;
+                                                                       owl:allValuesFrom dvo:Zone
+                                                                     ]
+                                                                   ) ;
+                                                rdf:type owl:Class
+                                              ] ;
+                          rdfs:subClassOf dvo:UrbanPlanning ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty dvo:hasImpact ;
+                                            owl:allValuesFrom dvo:CarbonFootprint
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty dvo:isAppliedOn ;
+                                            owl:allValuesFrom dvo:Building
+                                          ] ;
+                          rdfs:comment "A building configuration consists in defining the characteristics associated to the urban planning project related to a building, in particular the typology of this building, its construction type, the targeted energy performance, the energy sources for heating and domestic hot water, the parking area and the land use constraints of to be respected."@en ,
+                                       "Une configuration de bâtiment consiste en la définition des caractériques associées au projet d'aménagement lié à ce bâtiment, en particulier la typologie d'usage du bâtiment, son système constructif, la performance énergétique visée, les sources énergétiques pour le chauffage et eau chaude sanitaire, la surface de parking, les contraintes du terrain à respecter."@fr ;
+                          rdfs:label "Building configuration"@en ,
+                                     "Configuration de bâtiment"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#BuildingTypology
+dvo:BuildingTypology rdf:type owl:Class ;
+                     owl:equivalentClass [ rdf:type owl:Class ;
+                                           owl:oneOf ( dvo:ACTIVITIES_SERVICES
+                                                       dvo:COLLECTIVE_BUILDINGS
+                                                       dvo:OFFICES
+                                                       dvo:SINGLE_FAMILY_HOUSE
+                                                     )
+                                         ] ;
+                     rdfs:comment "Defines a set of buildings which have similarities in their type, function or form."@en ,
+                                  "Définit un ensemble de bâtiments qui ont des similarités au niveau de leur type, leur fonction ou leur forme."@fr ;
+                     rdfs:label "Building typology"@en ,
+                                "Typologie de bâtiment"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#BuildingUse
+dvo:BuildingUse rdf:type owl:Class ;
+                rdfs:subClassOf dvo:Use ;
+                rdfs:comment "A building use corresponds to the element related to what it is used for."@en ,
+                             "Un usage de bâtiment correspond à un élément relatif à ce quoi il est utilisé."@fr ;
+                rdfs:label "Building use"@en ,
+                           "Usage de bâtiment"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#CarbonFootprint
+dvo:CarbonFootprint rdf:type owl:Class ;
+                    rdfs:subClassOf dvo:EnvironmentalImpact ;
+                    owl:disjointUnionOf ( dvo:HighCarbonFootprint
+                                          dvo:LowCarbonFootprint
+                                          dvo:MediumCarbonFootprint
+                                        ) ;
+                    rdfs:comment "A carbon footprint is the amount of carbon dioxide released into the atmosphere as a result of an urban planning activity."@en ,
+                                 "Une empreinte carbone est la quantité de dioxyde de carbone libérée dans l'atmosphère à la suite d'une activité d'aménagement urbain."@fr ;
+                    rdfs:label "Carbon footprint"@en ,
+                               "Empreinte carbone"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#City
+dvo:City rdf:type owl:Class ;
+         rdfs:subClassOf dvo:Address ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty dvo:isPartOf ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass dvo:Department
+                         ] ;
+         rdfs:comment """Country, region, department, city, and district are different granularity levels of address. Possible \"hasPart\" relationships are possible among them.
+
+Instances of these concepts can be provided by an open data source, such as INSEE, Open Data, etc. Thus, for each concept, it is possible to add an equivalent set enumerating all provided instances."""@en ;
+         rdfs:label "City"@en ,
+                    "Commune"@fr ,
+                    "Ville"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#Commercial
+dvo:Commercial rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Class ;
+                                     owl:oneOf ( dvo:FLORIST
+                                                 dvo:GROCERY
+                                                 dvo:PERFUMERY
+                                                 dvo:SUPERMARKET
+                                               )
+                                   ] ;
+               rdfs:subClassOf dvo:BuildingUse ;
+               rdfs:label "Commercial"@en ,
+                          "Commercial"@fr ,
+                          "Correspond à un usage de bâtiment à but commercial."@fr ,
+                          "Describes a building use for commercial purposes."@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#ConstructionType
+dvo:ConstructionType rdf:type owl:Class ;
+                     owl:equivalentClass [ rdf:type owl:Class ;
+                                           owl:oneOf ( dvo:AERATED_CONCRETE
+                                                       dvo:CLAY_BRICK
+                                                       dvo:CONCRETE_BLOCKS
+                                                       dvo:CONCRETE_WOOD
+                                                       dvo:REINFORCED_CONCRETE
+                                                       dvo:STEEL_CONCRETE
+                                                       dvo:WOOD_FRAME
+                                                     )
+                                         ] ;
+                     rdfs:comment "Defines the type of materials used in the construction of the building."@en ,
+                                  "Définit le type des matériaux utilisés dans la construction du bâtiment."@fr ;
+                     rdfs:label "Construction type"@en ,
+                                "Système constructif"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#Country
+dvo:Country rdf:type owl:Class ;
+            rdfs:subClassOf dvo:Address ;
+            rdfs:comment """Country, region, department, city, and district are different granularity levels of address. Possible \"hasPart\" relationships are possible among them.
+
+Instances of these concepts can be provided by an open data source, such as INSEE, Open Data, etc. Thus, for each concept, it is possible to add an equivalent set enumerating all provided instances."""@en ;
+            rdfs:label "Country"@en ,
+                       "Pays"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#Cultural
+dvo:Cultural rdf:type owl:Class ;
+             owl:equivalentClass [ rdf:type owl:Class ;
+                                   owl:oneOf ( dvo:CONSERVATORY
+                                               dvo:MUSEUM
+                                               dvo:THEATER
+                                             )
+                                 ] ;
+             rdfs:subClassOf dvo:BuildingUse ;
+             rdfs:comment "Correspond à un usage de bâtiment à but culturel."@fr ,
+                          "Cultural"@en ,
+                          "Describes a building use for cultural purposes."@en ;
+             rdfs:label "Culturel"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#CyclingSurfaceScore
+dvo:CyclingSurfaceScore rdf:type owl:Class ;
+                        rdfs:comment "Il rentre dans l'évaluation de la mixité fonctionnelle d'une zone donnée. Ce score correspond au pourcentage de surface cyclable par rapport à la surface de voirie."@fr ;
+                        rdfs:label "Cycling surface score"@en ,
+                                   "Score surface cyclable"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#Department
+dvo:Department rdf:type owl:Class ;
+               rdfs:subClassOf dvo:Address ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty dvo:isPartOf ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass dvo:Region
+                               ] ;
+               rdfs:comment """Country, region, department, city, and district are different granularity levels of address. Possible \"hasPart\" relationships are possible among them.
+
+Instances of these concepts can be provided by an open data source, such as INSEE, Open Data, etc. Thus, for each concept, it is possible to add an equivalent set enumerating all provided instances."""@en ;
+               rdfs:label "Department"@en ,
+                          "Département"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#District
+dvo:District rdf:type owl:Class ;
+             rdfs:subClassOf dvo:Address ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty dvo:isPartOf ;
+                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass dvo:City
+                             ] ;
+             rdfs:comment """Country, region, department, city, and district are different granularity levels of address. Possible \"hasPart\" relationships are possible among them.
+
+Instances of these concepts can be provided by an open data source, such as INSEE, Open Data, etc. Thus, for each concept, it is possible to add an equivalent set enumerating all provided instances."""@en ;
+             rdfs:label "District"@en ,
+                        "IRIS"@fr ,
+                        "Quartier"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#Education
+dvo:Education rdf:type owl:Class ;
+              rdfs:subClassOf dvo:BuildingUse ;
+              rdfs:comment "Correspond à un usage de bâtiment à but educatif."@fr ,
+                           "Describes a building use for education purposes."@en ;
+              rdfs:label "Education"@en ,
+                         "Enseignement"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#EducationScore
+dvo:EducationScore rdf:type owl:Class ;
+                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                     owl:onProperty dvo:value ;
+                                     owl:allValuesFrom xsd:decimal
+                                   ] ;
+                   rdfs:comment "Il rentre dans l'évaluation de la mixité fonctionnelle d'une zone donnée. Ce score correspond au pourcentage de logements de l'aménagement situés à moins de 400m des écoles."@fr ;
+                   rdfs:label "Education score"@en ,
+                              "Score écoles"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#EnergyCarrier
+dvo:EnergyCarrier rdf:type owl:Class ;
+                  owl:equivalentClass [ rdf:type owl:Class ;
+                                        owl:oneOf ( dvo:COAL
+                                                    dvo:DISTRICT_HEATING
+                                                    dvo:ELECTRICITY
+                                                    dvo:FUEL
+                                                    dvo:NATURAL_GAS
+                                                    dvo:WOOD
+                                                  )
+                                      ] ;
+                  rdfs:comment "An energy carrier is the substance/system that contains energy that can be later converted to other forms. Such carriers are coal, electricity, fuel, natural gas, wood, district heating."@en ,
+                               "Un transporteur d'énergie est la substance / le système qui contient de l'énergie et qui peut ensuite être convertie en d'autres formes. Des exemples de transporteurs d'énergie sont le charbon, l'électricité, le carburant, le gaz naturel, le bois et les réseaux de chaleur."@fr ;
+                  rdfs:label "Energy carrier"@en ,
+                             "Transporteur d'énergie"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#EnergyPerformance
+dvo:EnergyPerformance rdf:type owl:Class ;
+                      owl:equivalentClass [ rdf:type owl:Class ;
+                                            owl:oneOf ( dvo:RT2012
+                                                        dvo:RT2012-10
+                                                        dvo:RT2012-20
+                                                        dvo:RT2012-40
+                                                        dvo:RT2012-5
+                                                      )
+                                          ] ;
+                      rdfs:comment "An energy performance is a measure of the relative energy efficiency of a building, building equipment, or building components, as measured by the amount of energy required to provide building services."@en ,
+                                   "Une performance énergétique est une mesure de l'efficacité énergétique relative d'un bâtiment, de l'équipement du bâtiment ou des composants du bâtiment, mesurée par la quantité d'énergie nécessaire pour fournir des services de construction."@fr ;
+                      rdfs:label "Energy performance"@en ,
+                                 "Performance énergétique"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#EnergySource
+dvo:EnergySource rdf:type owl:Class ;
+                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                   owl:onProperty dvo:renewableEnergyRate ;
+                                   owl:allValuesFrom xsd:decimal
+                                 ] ;
+                 owl:disjointUnionOf ( dvo:NonRenewableEnergySource
+                                       dvo:RenewableEnergySource
+                                     ) ;
+                 rdfs:comment """An energy source is a source, which can be renewable or non renewable,  from which useful energy can be extracted or recovered. 
+In our context, we focus on primary energy sources."""@en ,
+                              """Une source d'énergie est une source, qui peut être renouvelable ou non renouvelable, à partir de laquelle l'énergie utile peut être extraite ou récupérée.
+Dans notre contexte, nous nous concentrons sur les sources d'énergie primaire."""@fr ;
+                 rdfs:label "Energy source"@en ,
+                            "Source d'énérgie"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#EnvironmentalImpact
+dvo:EnvironmentalImpact rdf:type owl:Class ;
+                        rdfs:comment "An environmental impact is a change that affects the environment, whether adverse or beneficial, wholly or partially, resulting from an urban planning activity."@en ,
+                                     "Un impact environnemental est un changement qui affecte l'environnement, qu'il soit défavorable ou bénéfique, en tout ou en partie, résultant d'une activité d'aménagement urbain."@fr ;
+                        rdfs:label "Environmental impact"@en ,
+                                   "Impact environnemental"@fr ,
+                                   "Indicateur"@fr ,
+                                   "Indicator"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#GreenSpace
+dvo:GreenSpace rdf:type owl:Class ;
+               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                 owl:onProperty dvo:value ;
+                                 owl:allValuesFrom xsd:decimal
+                               ] ;
+               rdfs:comment "Surface d'espace vert prévu dans l'aménagement (m²/hab). Ce nombre rentre dans l'évaluation de la mixité fonctionnelle d'une zone urbaine donnée."@fr ;
+               rdfs:label "Green Space"@en ,
+                          "Surface espace vert"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#Health
+dvo:Health rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Class ;
+                                 owl:oneOf ( dvo:HOSPITAL
+                                             dvo:MEDICAL_OFFICE
+                                             dvo:PHARMACY
+                                           )
+                               ] ;
+           rdfs:subClassOf dvo:BuildingUse ;
+           rdfs:comment "Correspond à un usage de bâtiment à but sanitaire."@fr ,
+                        "Describes a building use for health purposes."@en ;
+           rdfs:label "Health"@en ,
+                      "Santé"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#HealthScore
+dvo:HealthScore rdf:type owl:Class ;
+                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                  owl:onProperty dvo:value ;
+                                  owl:allValuesFrom xsd:decimal
+                                ] ;
+                rdfs:comment "Il rentre dans l'évaluation de la mixité fonctionnelle d'une zone donnée. Ce score correspond au nombre de médecins pour 1000 habitants."@fr ;
+                rdfs:label "Health score"@en ,
+                           "Score médecins"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#HighCarbonFootprint
+dvo:HighCarbonFootprint rdf:type owl:Class ;
+                        rdfs:subClassOf dvo:CarbonFootprint ;
+                        rdfs:label "Empreinte carbone élevée"@fr ,
+                                   "High carbon footprint"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#HighMixedUseDegree
+dvo:HighMixedUseDegree rdf:type owl:Class ;
+                       rdfs:subClassOf dvo:MixedUseDegree ;
+                       rdfs:label "Degré de mixité fonctionnelle élevé"@fr ,
+                                  "High functional diversity degree"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#HigherEducation
+dvo:HigherEducation rdf:type owl:Class ;
+                    owl:equivalentClass [ rdf:type owl:Class ;
+                                          owl:oneOf ( dvo:UNIVERSITY
+                                                    )
+                                        ] ;
+                    rdfs:subClassOf dvo:Education ;
+                    rdfs:comment "Higher education"@en ;
+                    rdfs:label "Enseignement supérieur"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#HumanDensityScore
+dvo:HumanDensityScore rdf:type owl:Class ;
+                      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                        owl:onProperty dvo:value ;
+                                        owl:allValuesFrom xsd:decimal
+                                      ] ;
+                      rdfs:comment "Il rentre dans l'évaluation de la mixité fonctionnelle d'une zone donnée. Ce score correspond au nombre d'habitants par hectare."@fr ;
+                      rdfs:label "Human density score"@en ,
+                                 "Score densité humaine"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#IndividualsServices
+dvo:IndividualsServices rdf:type owl:Class ;
+                        owl:equivalentClass [ rdf:type owl:Class ;
+                                              owl:oneOf ( dvo:HAIRDRESSING
+                                                          dvo:POLICE
+                                                          dvo:POST_OFFICE
+                                                          dvo:RESTAURANT
+                                                        )
+                                            ] ;
+                        rdfs:subClassOf dvo:BuildingUse ;
+                        rdfs:comment "Correspond à un usage de bâtiment destiné aux services aux particuliers."@fr ,
+                                     "Describes a building use intended for services to individuals."@en ;
+                        rdfs:label "Individuals services"@en ,
+                                   "Serivces aux articuliers"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#Land
+dvo:Land rdf:type owl:Class ;
+         rdfs:subClassOf dvo:Object ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty dvo:hasLandUse ;
+                           owl:allValuesFrom dvo:LandUse
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty dvo:hasPart ;
+                           owl:allValuesFrom dvo:Building
+                         ] ;
+         rdfs:comment "A land, in our context, is the largest urban object granularity level, which has different caracteristics (such as its inteded use, its constraints, etc.) that help conduct energy and environmental assessments at urban scale. A land can be made of one or multiple buildings."@en ,
+                      "Un terrain, dans notre contexte, est le plus grand niveau de granularité d'objet urbain, qui présente des caractéristiques différentes (telles que son usage, ses contraintes, etc.) qui permettent d'effectuer des évaluations énergétiques et environnementales à l'échelle urbaine. Un terrain peut être composé d'un ou de plusieurs bâtiments."@fr ;
+         rdfs:label "Land"@en ,
+                    "Terrain"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#LandUse
+dvo:LandUse rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Class ;
+                                  owl:oneOf ( dvo:AGRICULTURE
+                                              dvo:CYCLEWAY
+                                              dvo:FORESTRY
+                                              dvo:MINING
+                                              dvo:PARK
+                                              dvo:ROADS
+                                              dvo:TRANSPORTATION
+                                            )
+                                ] ;
+            rdfs:subClassOf dvo:Use ;
+            rdfs:comment "A land use corresponds to the element related to what it is used for."@en ,
+                         "Un usage du sol correspond à un élément relatif à ce quoi il est utilisé."@fr ;
+            rdfs:label "Land use"@en ,
+                       "Occupation du sol"@fr ,
+                       "Usage du sol"@fr ,
+                       "Utilisation du sol"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#LandUseConstraints
+dvo:LandUseConstraints rdf:type owl:Class ;
+                       owl:equivalentClass [ rdf:type owl:Class ;
+                                             owl:oneOf ( dvo:EARTHQUAKE
+                                                         dvo:FLOODING
+                                                         dvo:NOT_APPLICABLE
+                                                       )
+                                           ] ;
+                       rdfs:comment "Land use constraints are restrictions that limit or preclude the development of a property."@en ,
+                                    "Les contraintes du terrain sont des restrictions qui limitent ou empêchent le développement d'une propriété."@fr ;
+                       rdfs:label "Contraintes du terrain"@fr ,
+                                  "Land use constraints"@en ,
+                                  "Les contraintes particulières liées au terrain."@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#LowCarbonFootprint
+dvo:LowCarbonFootprint rdf:type owl:Class ;
+                       rdfs:subClassOf dvo:CarbonFootprint ;
+                       rdfs:label "Empreinte carbone faible"@fr ,
+                                  "Low carbon footprint"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#LowMixedUseDegree
+dvo:LowMixedUseDegree rdf:type owl:Class ;
+                      rdfs:subClassOf dvo:MixedUseDegree ;
+                      rdfs:label "Degré de mixité fonctionnelle faible"@fr ,
+                                 "Low functional diversity degree"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#MediumCarbonFootprint
+dvo:MediumCarbonFootprint rdf:type owl:Class ;
+                          rdfs:subClassOf dvo:CarbonFootprint ;
+                          rdfs:label "Empreinte carbone moyenne"@fr ,
+                                     "Medium carbon footprint"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#MediumMixedUseDegree
+dvo:MediumMixedUseDegree rdf:type owl:Class ;
+                         rdfs:subClassOf dvo:MixedUseDegree ;
+                         rdfs:label "Degré de mixité fonctionnel moyen"@fr ,
+                                    "Medium functional diversity degree"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#MixedUse
+dvo:MixedUse rdf:type owl:Class ;
+             rdfs:subClassOf dvo:UrbanPlanning ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty dvo:hasPart ;
+                               owl:someValuesFrom dvo:EducationScore
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty dvo:hasPart ;
+                               owl:someValuesFrom dvo:GreenSpace
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty dvo:hasPart ;
+                               owl:someValuesFrom dvo:HealthScore
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty dvo:hasPart ;
+                               owl:someValuesFrom dvo:HumanDensityScore
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty dvo:hasPart ;
+                               owl:someValuesFrom dvo:PublicTransportScore
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty dvo:hasPart ;
+                               owl:someValuesFrom dvo:TradeScore
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty dvo:hasImpact ;
+                               owl:allValuesFrom dvo:MixedUseDegree
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty dvo:isAppliedOn ;
+                               owl:allValuesFrom dvo:Zone
+                             ] ;
+             rdfs:comment "A mixed use in an urban area is the fact that functions (such as housing, commerce, hospitals, sports, etc.) are represented there."@en ,
+                          "Une mixité fonctionnelle dans une zone urbaine est le fait que les fonctions (ex: habitat, commerce, hospitalières, sportives, etc.) y soient représentées."@fr ;
+             rdfs:label "Mixed use"@en ,
+                        "Mixité fonctionnelle"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#MixedUseDegree
+dvo:MixedUseDegree rdf:type owl:Class ;
+                   rdfs:subClassOf dvo:EnvironmentalImpact ;
+                   owl:disjointUnionOf ( dvo:HighMixedUseDegree
+                                         dvo:LowMixedUseDegree
+                                         dvo:MediumMixedUseDegree
+                                       ) ;
+                   rdfs:comment "A mixed use degree is a numeric value that determines if the mixed use is tight, medium or coarse."@fr ,
+                                "Un degré de mixité fonctionnelle est une valeur numérique qui détermine s'il s'agit de mixité fine, moyenne ou grossière."@fr ;
+                   rdfs:label "Degré de mixité fonctionnelle"@fr ,
+                              "Mixed use degree"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#NonRenewableEnergySource
+dvo:NonRenewableEnergySource rdf:type owl:Class ;
+                             owl:equivalentClass [ rdf:type owl:Class ;
+                                                   owl:oneOf ( dvo:COAL
+                                                               dvo:CRUDE_OIL
+                                                               dvo:NATURAL_GAS
+                                                               dvo:NUCLEAR
+                                                             )
+                                                 ] ;
+                             rdfs:subClassOf dvo:EnergySource ;
+                             rdfs:comment "A non renewable energy source is a resource of economic value that cannot be readily replaced by natural means at a quick enough pace to keep up with consumption."@en ,
+                                          "Une source d'énergie non renouvelable est une ressource de valeur économique qui ne peut pas être facilement remplacée par des moyens naturels à un rythme suffisamment rapide pour suivre la consommation."@fr ;
+                             rdfs:label "Non renewable energy source"@en ,
+                                        "Source d'énergie non renouvelable"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#NumberOfBuildings
+dvo:NumberOfBuildings rdf:type owl:Class ;
+                      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                        owl:onProperty dvo:value ;
+                                        owl:allValuesFrom xsd:integer
+                                      ] ;
+                      rdfs:comment "Correspond au nombre de bâtiments dans la zone urbaine."@fr ,
+                                   "Determines the number of buildings in a given urban zone."@en ;
+                      rdfs:label "Nombre de bâtiments"@fr ,
+                                 "Number of buildings"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#NumberOfInhabitants
+dvo:NumberOfInhabitants rdf:type owl:Class ;
+                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                          owl:onProperty dvo:value ;
+                                          owl:allValuesFrom xsd:integer
+                                        ] ;
+                        rdfs:comment "Correspond au nombre d'habitants dans une zone urbaine."@fr ,
+                                     "Determines the number of inhabitants in a given urban zone."@en ;
+                        rdfs:label "Nombre d'habitants"@fr ,
+                                   "Number of inhabitants"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#Object
+dvo:Object rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty dvo:hasAddress ;
+                             owl:allValuesFrom dvo:Address
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty dvo:hasConstraints ;
+                             owl:allValuesFrom dvo:LandUseConstraints
+                           ] ;
+           owl:disjointWith dvo:Zone ;
+           rdfs:comment "An urban object corresponds to a land, a building or a boiler station in an urban zone"@en ,
+                        "Un object urbain est un terrain, un bâtiment ou une chaudière dans une zone urbaine."@fr ;
+           rdfs:label "Objet urbain"@fr ,
+                      "Urban object"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#ParkingSpace
+dvo:ParkingSpace rdf:type owl:Class ;
+                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                   owl:onProperty dvo:value ;
+                                   owl:allValuesFrom xsd:decimal
+                                 ] ;
+                 rdfs:comment "Correspond à la surface de parking d'un bâtiment, utilisée dans les évaluations de l'impact environnemental."@fr ,
+                              "Corresponds to the parking space of a building, used for environmental impact assessments."@en ;
+                 rdfs:label "Parking area"@en ,
+                            "Parking space"@en ,
+                            "Surface de parking"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#PrimarySchool
+dvo:PrimarySchool rdf:type owl:Class ;
+                  owl:equivalentClass [ rdf:type owl:Class ;
+                                        owl:oneOf ( dvo:ELEMENTARY_SCHOOL
+                                                    dvo:PRESCHOOL
+                                                  )
+                                      ] ;
+                  rdfs:subClassOf dvo:Education .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#PublicTransportScore
+dvo:PublicTransportScore rdf:type owl:Class ;
+                         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                           owl:onProperty dvo:value ;
+                                           owl:allValuesFrom xsd:decimal
+                                         ] ;
+                         rdfs:comment "Il rentre dans l'évaluation de la mixité fonctionnelle d'une zone donnée. Ce score correspond au pourcentage de logements de l'aménagement situés à moins de 300m des arrêts de transport public."@fr ;
+                         rdfs:label "Public transport score"@en ,
+                                    "Score arrêts de transport public"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#Region
+dvo:Region rdf:type owl:Class ;
+           rdfs:subClassOf dvo:Address ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty dvo:isPartOf ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass dvo:Country
+                           ] ;
+           rdfs:comment """Country, region, department, city, and district are different granularity levels of address. Possible \"hasPart\" relationships are possible among them.
+
+Instances of these concepts can be provided by an open data source, such as INSEE, Open Data, etc. Thus, for each concept, it is possible to add an equivalent set enumerating all provided instances."""@en ;
+           rdfs:label "Region"@en ,
+                      "Région"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#RenewableEnergySource
+dvo:RenewableEnergySource rdf:type owl:Class ;
+                          owl:equivalentClass [ rdf:type owl:Class ;
+                                                owl:oneOf ( dvo:BIOMASS
+                                                            dvo:GEOTHERMAL
+                                                            dvo:HYDRO
+                                                            dvo:SOLAR
+                                                          )
+                                              ] ;
+                          rdfs:subClassOf dvo:EnergySource ;
+                          rdfs:comment "A renewable energy source corresponds to a resource that is naturally replenished on a human timescale."@en ,
+                                       "Une source d'énergie renouvelable correspond à une ressource naturellement reconstituée à l'échelle humaine."@fr ;
+                          rdfs:label "Renewable energy source"@en ,
+                                     "Source d'énergie non renouvelable"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#SecondarySchool
+dvo:SecondarySchool rdf:type owl:Class ;
+                    owl:equivalentClass [ rdf:type owl:Class ;
+                                          owl:oneOf ( dvo:HIGH_SCHOOL
+                                                      dvo:MIDDLE_SCHOOL
+                                                    )
+                                        ] ;
+                    rdfs:subClassOf dvo:Education .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#Service
+dvo:Service rdf:type owl:Class ;
+            owl:equivalentClass dvo:Use ;
+            rdfs:comment "A service offered to the population in a territory."@en ,
+                         "Un service rendu à la population sur un territoire."@fr ;
+            rdfs:label "Service"@en ,
+                       "Service"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#SportsAndLeisure
+dvo:SportsAndLeisure rdf:type owl:Class ;
+                     owl:equivalentClass [ rdf:type owl:Class ;
+                                           owl:oneOf ( dvo:GYM
+                                                       dvo:HORSE_RIDING_CENTER
+                                                       dvo:TENNIS
+                                                     )
+                                         ] ;
+                     rdfs:subClassOf dvo:BuildingUse ;
+                     rdfs:comment "Correspond à un usage de bâtiment destiné aux activités sportives et loisirs."@fr ,
+                                  "Describes a building use intended for sports and leisure."@en ;
+                     rdfs:label "Sports and leisure"@en ,
+                                "Sports et loisirs"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#TourismAndTansport
+dvo:TourismAndTansport rdf:type owl:Class ;
+                       owl:equivalentClass [ rdf:type owl:Class ;
+                                             owl:oneOf ( dvo:AIRPORT
+                                                         dvo:HOTEL
+                                                         dvo:TAXI
+                                                         dvo:TRAIN_STATION
+                                                       )
+                                           ] ;
+                       rdfs:subClassOf dvo:BuildingUse ;
+                       rdfs:comment "Correspond à un usage de bâtiment destiné au tourisme et au transport."@fr ,
+                                    "Describes a building use intended for tourism and transport."@en ;
+                       rdfs:label "Tourism and transport"@en ,
+                                  "Tourisme et transport"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#TradeScore
+dvo:TradeScore rdf:type owl:Class ;
+               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                 owl:onProperty dvo:value ;
+                                 owl:allValuesFrom xsd:decimal
+                               ] ;
+               rdfs:comment "Il rentre dans l'évaluation de la mixité fonctionnelle d'une zone donnée. Ce score correspond au pourcentage de logements de l'aménagement situés à moins de 240m des commerces."@fr ;
+               rdfs:label "Score commerces"@fr ,
+                          "Trade score"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#UrbanPlanning
+dvo:UrbanPlanning rdf:type owl:Class ;
+                  rdfs:subClassOf lca:Activity ;
+                  rdfs:comment "An urban planning activity comes down to the implementation of an urban project. It either consists of the creation of waterproofsurfaces or the modification of existing surfaces."@en ,
+                               "Une opération d'aménagement urbain est une mise en œuvre d'un projet urbain. Celui-ci peut consister en la création de surfaces imperméabilisées ou en la modification de surfaces existantes."@fr ;
+                  rdfs:label "Opération d'aménagement urbain"@fr ,
+                             "Urban planning"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#Use
+dvo:Use rdf:type owl:Class ;
+        rdfs:comment "A use corresponds to the element related to what a building or land is used for."@en ,
+                     "Un usage correspond à un élément relatif à ce quoi un bâtiment ou un terrain est utilisé."@fr ;
+        rdfs:label "Usage"@fr ,
+                   "Use"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#Zone
+dvo:Zone rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty dvo:hasAddress ;
+                           owl:allValuesFrom dvo:Address
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty dvo:hasGreenSpace ;
+                           owl:allValuesFrom dvo:GreenSpace
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty dvo:hasNumberOfBuildings ;
+                           owl:allValuesFrom dvo:NumberOfBuildings
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty dvo:hasNumberOfInhabitants ;
+                           owl:allValuesFrom dvo:NumberOfInhabitants
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty dvo:hasPart ;
+                           owl:allValuesFrom dvo:Object
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty dvo:hasZoneType ;
+                           owl:allValuesFrom dvo:ZoneCategory
+                         ] ;
+         rdfs:comment "Defines a virtual zone made of a set of objects."@en ,
+                      "Definit une zone virtuelle formée par un ensemble d'objets."@fr ;
+         rdfs:label "Zone"@en ,
+                    "Zone"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#ZoneCategory
+dvo:ZoneCategory rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Class ;
+                                       owl:oneOf ( dvo:RURAL_AREA
+                                                   dvo:SUBURBAN_PERIPHERY
+                                                   dvo:URBAN_CENTER
+                                                 )
+                                     ] ;
+                 rdfs:comment "Defines the category of the zone delimiting the urban project, ex. urban aera, suburban periphery, urban center."@en ,
+                              "Définit la catégorie de la zone délimitant le projet urbain, ex. pôle urbain, couronne périurbaine, espace rural."@fr ;
+                 rdfs:label "Catégorie de la zone"@fr ,
+                            "Zone category"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://example.com#bldg1
+ex:bldg1 rdf:type owl:NamedIndividual ;
+         dvo:hasConstructionType dvo:WOOD_FRAME ;
+         dvo:hasEnergyCarrier dvo:WOOD ;
+         dvo:hasTargetEnergyPerformance dvo:RT2012-40 ;
+         dvo:hasTypology dvo:COLLECTIVE_BUILDINGS ;
+         dvo:isPartOf ex:zone_1 .
+
+
+###  http://example.com#bldg_2
+ex:bldg_2 rdf:type owl:NamedIndividual ,
+                   dvo:Building ;
+          dvo:hasConstructionType dvo:WOOD_FRAME ;
+          dvo:hasEnergyCarrier dvo:DISTRICT_HEATING ;
+          dvo:hasTargetEnergyPerformance dvo:RT2012-40 ;
+          dvo:hasTypology dvo:COLLECTIVE_BUILDINGS ;
+          dvo:isPartOf ex:zone_2 .
+
+
+###  http://example.com#bldg_3
+ex:bldg_3 rdf:type owl:NamedIndividual ;
+          dvo:hasConstructionType dvo:CLAY_BRICK ;
+          dvo:hasEnergyCarrier dvo:NATURAL_GAS ;
+          dvo:hasTargetEnergyPerformance dvo:RT2012 ;
+          dvo:hasTypology dvo:SINGLE_FAMILY_HOUSE ;
+          dvo:isPartOf ex:zone_3 .
+
+
+###  http://example.com#bldg_4
+ex:bldg_4 rdf:type owl:NamedIndividual ;
+          dvo:hasConstructionType dvo:CONCRETE_BLOCKS ;
+          dvo:hasEnergyCarrier dvo:ELECTRICITY ;
+          dvo:hasTargetEnergyPerformance dvo:RT2012-10 ;
+          dvo:hasTypology dvo:SINGLE_FAMILY_HOUSE ;
+          dvo:isPartOf ex:zone_4 .
+
+
+###  http://example.com#bldg_config1
+ex:bldg_config1 rdf:type owl:NamedIndividual ,
+                         dvo:BuildingConfiguration ;
+                dvo:hasImpact ex:envimpact1 ;
+                dvo:isAppliedOn ex:bldg1 .
+
+
+###  http://example.com#bldg_config2
+ex:bldg_config2 rdf:type owl:NamedIndividual ,
+                         dvo:BuildingConfiguration ;
+                dvo:hasImpact ex:envimpact2 ;
+                dvo:isAppliedOn ex:bldg_2 .
+
+
+###  http://example.com#bldg_config3
+ex:bldg_config3 rdf:type owl:NamedIndividual ,
+                         dvo:BuildingConfiguration ;
+                dvo:hasImpact ex:envimpact3 ;
+                dvo:isAppliedOn ex:bldg_3 .
+
+
+###  http://example.com#bldg_config4
+ex:bldg_config4 rdf:type owl:NamedIndividual ,
+                         dvo:BuildingConfiguration ;
+                dvo:hasImpact ex:envimpact4 ;
+                dvo:isAppliedOn ex:bldg_4 .
+
+
+###  http://example.com#education_score1
+ex:education_score1 rdf:type owl:NamedIndividual ,
+                             dvo:EducationScore ;
+                    dvo:value 80.0 .
+
+
+###  http://example.com#envimpact1
+ex:envimpact1 rdf:type owl:NamedIndividual .
+
+
+###  http://example.com#envimpact2
+ex:envimpact2 rdf:type owl:NamedIndividual .
+
+
+###  http://example.com#envimpact3
+ex:envimpact3 rdf:type owl:NamedIndividual .
+
+
+###  http://example.com#envimpact4
+ex:envimpact4 rdf:type owl:NamedIndividual .
+
+
+###  http://example.com#green_score1
+ex:green_score1 rdf:type owl:NamedIndividual ,
+                         dvo:GreenSpace ;
+                dvo:value 31.0 .
+
+
+###  http://example.com#health_score1
+ex:health_score1 rdf:type owl:NamedIndividual ,
+                          dvo:HealthScore ;
+                 dvo:value 9.0 .
+
+
+###  http://example.com#human_score1
+ex:human_score1 rdf:type owl:NamedIndividual ,
+                         dvo:HumanDensityScore ;
+                dvo:value 100.0 .
+
+
+###  http://example.com#mixed_use1
+ex:mixed_use1 rdf:type owl:NamedIndividual ;
+              dvo:hasImpact ex:mixed_use_d1 ;
+              dvo:hasPart ex:education_score1 ,
+                          ex:green_score1 ,
+                          ex:health_score1 ,
+                          ex:human_score1 ,
+                          ex:trade_score1 ,
+                          ex:transport_score1 ;
+              dvo:isAppliedOn ex:zone_5 .
+
+
+###  http://example.com#mixed_use_d1
+ex:mixed_use_d1 rdf:type owl:NamedIndividual .
+
+
+###  http://example.com#trade_score1
+ex:trade_score1 rdf:type owl:NamedIndividual ,
+                         dvo:TradeScore ;
+                dvo:value 90.0 .
+
+
+###  http://example.com#transport_score1
+ex:transport_score1 rdf:type owl:NamedIndividual ,
+                             dvo:PublicTransportScore ;
+                    dvo:value 100.0 .
+
+
+###  http://example.com#zone_1
+ex:zone_1 rdf:type owl:NamedIndividual ,
+                   dvo:Zone ;
+          dvo:hasZoneType dvo:URBAN_CENTER .
+
+
+###  http://example.com#zone_2
+ex:zone_2 rdf:type owl:NamedIndividual ,
+                   dvo:Zone ;
+          dvo:hasZoneType dvo:URBAN_CENTER .
+
+
+###  http://example.com#zone_3
+ex:zone_3 rdf:type owl:NamedIndividual ,
+                   dvo:Zone ;
+          dvo:hasZoneType dvo:RURAL_AREA .
+
+
+###  http://example.com#zone_4
+ex:zone_4 rdf:type owl:NamedIndividual ,
+                   dvo:Zone ;
+          dvo:hasZoneType dvo:SUBURBAN_PERIPHERY .
+
+
+###  http://example.com#zone_5
+ex:zone_5 rdf:type owl:NamedIndividual ,
+                   dvo:Zone .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#ACTIVITIES_SERVICES
+dvo:ACTIVITIES_SERVICES rdf:type owl:NamedIndividual ;
+                        rdfs:label "Activities and services"@en ,
+                                   "Activités et services"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#AERATED_CONCRETE
+dvo:AERATED_CONCRETE rdf:type owl:NamedIndividual ;
+                     rdfs:label "Aerated concrete"@en ,
+                                "Béton cellulaire"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#AGRICULTURE
+dvo:AGRICULTURE rdf:type owl:NamedIndividual ;
+                rdfs:label "Agriculture"@en ,
+                           "Agriculture"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#AIRPORT
+dvo:AIRPORT rdf:type owl:NamedIndividual ;
+            rdfs:label "Airport"@en ,
+                       "Aéroport"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#BIOMASS
+dvo:BIOMASS rdf:type owl:NamedIndividual ;
+            rdfs:label "Biomass"@en ,
+                       "Biomasse"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#CLAY_BRICK
+dvo:CLAY_BRICK rdf:type owl:NamedIndividual ;
+               rdfs:label "Brique en terre cuite"@fr ,
+                          "Clay brick"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#COAL
+dvo:COAL rdf:type owl:NamedIndividual ;
+         rdfs:label "Charbon"@fr ,
+                    "Coal"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#COLLECTIVE_BUILDINGS
+dvo:COLLECTIVE_BUILDINGS rdf:type owl:NamedIndividual ;
+                         rdfs:label "Bâtiments collectifs"@fr ,
+                                    "Collective buildings"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#CONCRETE_BLOCKS
+dvo:CONCRETE_BLOCKS rdf:type owl:NamedIndividual ;
+                    rdfs:label "Blocs de béton"@fr ,
+                               "Concrete blocks"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#CONCRETE_WOOD
+dvo:CONCRETE_WOOD rdf:type owl:NamedIndividual ;
+                  rdfs:label "Béton / Bois"@fr ,
+                             "Concrete / Wood"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#CONSERVATORY
+dvo:CONSERVATORY rdf:type owl:NamedIndividual ;
+                 rdfs:label "Conservatoire"@fr ,
+                            "Conservatory"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#CRUDE_OIL
+dvo:CRUDE_OIL rdf:type owl:NamedIndividual ;
+              rdfs:label "Crude oil"@en ,
+                         "Pétrole brut"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#CYCLEWAY
+dvo:CYCLEWAY rdf:type owl:NamedIndividual ;
+             rdfs:label "Cycleway"@en ,
+                        "Piste cyclable"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#DISTRICT_HEATING
+dvo:DISTRICT_HEATING rdf:type owl:NamedIndividual ;
+                     rdfs:label "District heating"@en ,
+                                "Réseaux de chaleur"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#EARTHQUAKE
+dvo:EARTHQUAKE rdf:type owl:NamedIndividual .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#ELECTRICITY
+dvo:ELECTRICITY rdf:type owl:NamedIndividual ;
+                rdfs:label "Electricity"@en ,
+                           "Eléctricité"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#ELEMENTARY_SCHOOL
+dvo:ELEMENTARY_SCHOOL rdf:type owl:NamedIndividual ;
+                      rdfs:label "Ecole élémentaire"@fr ,
+                                 "Elementary school"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#FLOODING
+dvo:FLOODING rdf:type owl:NamedIndividual ;
+             rdfs:label "Flooding"@en ,
+                        "Inondation"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#FLORIST
+dvo:FLORIST rdf:type owl:NamedIndividual ;
+            rdfs:label "Fleuriste"@fr ,
+                       "Florist"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#FORESTRY
+dvo:FORESTRY rdf:type owl:NamedIndividual ;
+             rdfs:label "Forestry"@en ,
+                        "Forêt"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#FUEL
+dvo:FUEL rdf:type owl:NamedIndividual ;
+         rdfs:label "Fioul"@fr ,
+                    "Fuel"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#GEOTHERMAL
+dvo:GEOTHERMAL rdf:type owl:NamedIndividual ;
+               rdfs:label "Geothermal"@en ,
+                          "Géothermique"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#GROCERY
+dvo:GROCERY rdf:type owl:NamedIndividual ;
+            rdfs:label "Epicerie"@fr ,
+                       "Grocery"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#GYM
+dvo:GYM rdf:type owl:NamedIndividual ;
+        rdfs:label "Gym"@en ,
+                   "Salle de sport"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#HAIRDRESSING
+dvo:HAIRDRESSING rdf:type owl:NamedIndividual ;
+                 rdfs:label "Hair dressing"@en ,
+                            "Salon de coiffure"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#HIGH_SCHOOL
+dvo:HIGH_SCHOOL rdf:type owl:NamedIndividual ;
+                rdfs:label "High school"@en ,
+                           "Lycée"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#HORSE_RIDING_CENTER
+dvo:HORSE_RIDING_CENTER rdf:type owl:NamedIndividual ;
+                        rdfs:label "Centre équestre"@fr ,
+                                   "Horseriding center"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#HOSPITAL
+dvo:HOSPITAL rdf:type owl:NamedIndividual ;
+             rdfs:label "Hospital"@en ,
+                        "Hôpital"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#HOTEL
+dvo:HOTEL rdf:type owl:NamedIndividual ;
+          rdfs:label "Hotel"@en ,
+                     "hôtel"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#HYDRO
+dvo:HYDRO rdf:type owl:NamedIndividual ;
+          rdfs:label "Hydraulique"@fr ,
+                     "Hydro"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#MEDICAL_OFFICE
+dvo:MEDICAL_OFFICE rdf:type owl:NamedIndividual ;
+                   rdfs:label "Cabinet médical"@fr ,
+                              "Medical office"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#MIDDLE_SCHOOL
+dvo:MIDDLE_SCHOOL rdf:type owl:NamedIndividual ;
+                  rdfs:label "Collège"@fr ,
+                             "Middle school"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#MINING
+dvo:MINING rdf:type owl:NamedIndividual ;
+           rdfs:label "Mining"@en ,
+                      "Minière"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#MUSEUM
+dvo:MUSEUM rdf:type owl:NamedIndividual ;
+           rdfs:label "Museum"@en ,
+                      "Musée"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#NATURAL_GAS
+dvo:NATURAL_GAS rdf:type owl:NamedIndividual ;
+                rdfs:label "Gaz naturel"@fr ,
+                           "Natural gas"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#NOT_APPLICABLE
+dvo:NOT_APPLICABLE rdf:type owl:NamedIndividual ;
+                   rdfs:label "Non applicable"@fr ,
+                              "Not applicable"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#NUCLEAR
+dvo:NUCLEAR rdf:type owl:NamedIndividual ;
+            rdfs:label "Nuclear"@en ,
+                       "Nucléaire"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#OFFICES
+dvo:OFFICES rdf:type owl:NamedIndividual ;
+            rdfs:label "Bureaux"@fr ,
+                       "Offices"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#PARK
+dvo:PARK rdf:type owl:NamedIndividual ;
+         rdfs:label "Jardin public"@fr ,
+                    "Park"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#PERFUMERY
+dvo:PERFUMERY rdf:type owl:NamedIndividual ;
+              rdfs:label "Parfumerie"@fr ,
+                         "Perfumery"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#PHARMACY
+dvo:PHARMACY rdf:type owl:NamedIndividual ;
+             rdfs:label "Pharmacie"@fr ,
+                        "Pharmacy"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#POLICE
+dvo:POLICE rdf:type owl:NamedIndividual ;
+           rdfs:label "Police"@en ,
+                      "Police"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#POST_OFFICE
+dvo:POST_OFFICE rdf:type owl:NamedIndividual ;
+                rdfs:label "Burea de poste"@fr ,
+                           "Post office"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#PRESCHOOL
+dvo:PRESCHOOL rdf:type owl:NamedIndividual ;
+              rdfs:label "Ecole maternelle"@fr ,
+                         "Preschool"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#REINFORCED_CONCRETE
+dvo:REINFORCED_CONCRETE rdf:type owl:NamedIndividual ;
+                        rdfs:label "Béton armé"@fr ,
+                                   "Reinforced concrete"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#RESTAURANT
+dvo:RESTAURANT rdf:type owl:NamedIndividual ;
+               rdfs:label "Restaurant"@en ,
+                          "Restaurant"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#ROADS
+dvo:ROADS rdf:type owl:NamedIndividual ;
+          rdfs:label "Roads"@en ,
+                     "Voiries"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#RT2012
+dvo:RT2012 rdf:type owl:NamedIndividual ;
+           rdfs:comment "La réglementation thermique 2012 (dite « RT 2012 ») pose des objectifs ambitieux en matière d’efficacité énergétique avec un maximum d’énergie consommée fixé à 50 kWhep/(m².an) en moyenne. Elle s'applique à tous les projets de constructions en France."@fr ,
+                        "The 2012 thermal regulations (known as “RT 2012”) set ambitious targets for efficient energy with a maximum energy consumption of 50 kWhpe / (m².year) on average. It applies to all construction projects in France."@en ;
+           rdfs:label "RT 2012"@fr ,
+                      "Réglementation thermique 2012"@fr ,
+                      "Thermal regulation 2012"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#RT2012-10
+dvo:RT2012-10 rdf:type owl:NamedIndividual ;
+              rdfs:comment "La « RT 2012 -10 % » est un label mis en place pour récompenser les bâtiments dont la performance énergétique atteint un niveau supérieur à celui fixé par la norme actuelle qu'est la réglementation thermique 2012. Comme son nom l'indique, le label est décerné aux bâtiments résidentiels ou commerciaux qui affichent une consommation d'énergie inférieure d'au moins 10% aux seuils légaux."@fr ,
+                           "The “RT 2012 -10%” is a label set up to reward buildings whose energy performance reaches a level higher than the one set by the current standard, which is the thermal regulation 2012. The label is awarded to residential or commercial buildings whose energy consumption is at least 10% below the legal thresholds."@en ;
+              rdfs:label "RT 2012 - 10%"@fr ,
+                         "Réglementation thermique 2012 - 10%"@fr ,
+                         "Thermal regulation 2012 - 10%"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#RT2012-20
+dvo:RT2012-20 rdf:type owl:NamedIndividual ;
+              rdfs:comment "La « RT 2012 -20 % » est un label mis en place pour récompenser les bâtiments dont la performance énergétique atteint un niveau supérieur à celui fixé par la norme actuelle qu'est la réglementation thermique 2012. Comme son nom l'indique, le label est décerné aux bâtiments résidentiels ou commerciaux qui affichent une consommation d'énergie inférieure d'au moins 20% aux seuils légaux."@fr ,
+                           "The “RT 2012 -20%” is a label set up to reward buildings whose energy performance reaches a level higher than the one set by the current standard, which is the thermal regulation 2012. The label is awarded to residential or commercial buildings whose energy consumption is at least 20% below the legal thresholds."@en ;
+              rdfs:label "RT 2012 - 20%"@fr ,
+                         "Réglementation thermique 2012 - 20%"@fr ,
+                         "Thermal regulation 2012 - 20%"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#RT2012-40
+dvo:RT2012-40 rdf:type owl:NamedIndividual ;
+              rdfs:comment "La « RT 2012 -40 % » est un label mis en place pour récompenser les bâtiments dont la performance énergétique atteint un niveau supérieur à celui fixé par la norme actuelle qu'est la réglementation thermique 2012. Comme son nom l'indique, le label est décerné aux bâtiments résidentiels ou commerciaux qui affichent une consommation d'énergie inférieure d'au moins 40% aux seuils légaux."@fr ,
+                           "The “RT 2012 -40%” is a label set up to reward buildings whose energy performance reaches a level higher than the one set by the current standard, which is the thermal regulation 2012. The label is awarded to residential or commercial buildings whose energy consumption is at least 40% below the legal thresholds."@en ;
+              rdfs:label "RT 2012 - 40%"@fr ,
+                         "Réglementation thermique 2012 - 40%"@fr ,
+                         "Thermal regulation 2012 - 40%"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#RT2012-5
+dvo:RT2012-5 rdf:type owl:NamedIndividual ;
+             rdfs:comment "La « RT 2012 -5 % » est un label mis en place pour récompenser les bâtiments dont la performance énergétique atteint un niveau supérieur à celui fixé par la norme actuelle qu'est la réglementation thermique 2012. Comme son nom l'indique, le label est décerné aux bâtiments résidentiels ou commerciaux qui affichent une consommation d'énergie inférieure d'au moins 5% aux seuils légaux."@fr ,
+                          "The “RT 2012 -5%” is a label set up to reward buildings whose energy performance reaches a level higher than the one set by the current standard, which is the thermal regulation 2012. The label is awarded to residential or commercial buildings whose energy consumption is at least 5% below the legal thresholds."@en ;
+             rdfs:label "RT 2012 - 5%"@fr ,
+                        "Réglementation thermique 2012 - 5%"@fr ,
+                        "Thermal regulation 2012 - 5%"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#RURAL_AREA
+dvo:RURAL_AREA rdf:type owl:NamedIndividual ;
+               rdfs:label "Espace rural"@fr ,
+                          "Rural area"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#SINGLE_FAMILY_HOUSE
+dvo:SINGLE_FAMILY_HOUSE rdf:type owl:NamedIndividual ;
+                        rdfs:label "Maison individuelle"@fr ,
+                                   "Single family house"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#SOLAR
+dvo:SOLAR rdf:type owl:NamedIndividual ;
+          rdfs:label "Solaire"@fr ,
+                     "Solar"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#STEEL_CONCRETE
+dvo:STEEL_CONCRETE rdf:type owl:NamedIndividual ;
+                   rdfs:label "Acier / Béton"@fr ,
+                              "Steel / Concrete"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#SUBURBAN_PERIPHERY
+dvo:SUBURBAN_PERIPHERY rdf:type owl:NamedIndividual ;
+                       rdfs:label "Couronne périurbaine"@fr ,
+                                  "Suburban periphery"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#SUPERMARKET
+dvo:SUPERMARKET rdf:type owl:NamedIndividual ;
+                rdfs:label "Supermarché"@fr ,
+                           "Supermarket"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#TAXI
+dvo:TAXI rdf:type owl:NamedIndividual ;
+         rdfs:label "Taxi"@en ,
+                    "Taxi"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#TENNIS
+dvo:TENNIS rdf:type owl:NamedIndividual ;
+           rdfs:label "Tennis"@en ,
+                      "Tennis"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#THEATER
+dvo:THEATER rdf:type owl:NamedIndividual ;
+            rdfs:label "Theater"@en ,
+                       "Théatre"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#TRAIN_STATION
+dvo:TRAIN_STATION rdf:type owl:NamedIndividual ;
+                  rdfs:label "Gare de train"@fr ,
+                             "Train station"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#TRANSPORTATION
+dvo:TRANSPORTATION rdf:type owl:NamedIndividual ;
+                   rdfs:label "Transport"@fr ,
+                              "Transportation"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#UNIVERSITY
+dvo:UNIVERSITY rdf:type owl:NamedIndividual ;
+               rdfs:label "University"@en ,
+                          "Universtité"@fr .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#URBAN_CENTER
+dvo:URBAN_CENTER rdf:type owl:NamedIndividual ;
+                 rdfs:label "Pôle urbain"@fr ,
+                            "Urban center"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#WOOD
+dvo:WOOD rdf:type owl:NamedIndividual ;
+         rdfs:label "Bois"@fr ,
+                    "Wood"@en .
+
+
+###  https://www.nobatek.inef4.com/dataview/onto#WOOD_FRAME
+dvo:WOOD_FRAME rdf:type owl:NamedIndividual ;
+               rdfs:label "Ossature bois"@fr ,
+                          "Wood frame"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
